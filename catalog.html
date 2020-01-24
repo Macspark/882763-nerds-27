@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Нёрдс</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  </head>
+<body>
+
+  <div class="grey-back">
+  <header class="page-header">
+  <div class="container">
+    <div class="menu">
+         <a class="logo" href="index.html">
+           <img src="img/nerds-logo.svg"
+       class="nerds-logo" alt="Лого студии Nёrds"
+       width= "160" height="65" >
+         </a>
+
+       <nav>
+         <ul class="menu-buttons">
+          <li><a href="#">СТУДИЯ</a></li>
+          <li><a href="#">КЛИЕНТЫ</a></li>
+          <li><a class="menu-active" href="catalog.html">МАГАЗИН</a></li>
+          <li><a href="#">КОНТАКТЫ</a></li>
+         </ul>
+       </nav>
+
+          <a class="buy-cart" href="#">
+            <img src="img/buy-cart-icon.svg"
+                  class="buy-cart-icon" alt="Корзина"
+                  width="15" height="15">
+            КОРЗИНА
+          </a>
+      </div>
+  </div>
+  </header>
+  </div>
+
+ <div class="page-title grey-back">
+   <h1>Магазин готовых шаблонов</h1>
+ </div>
+
+
+<main>
+<div class="container">
+
+   <div class="catalog-content">
+     <div class="catalog-block catalog-left">
+     </div>
+     <div class="catalog-block catalog-right">
+     </div>
+   </div>
+
+
+</div> <!-- container -->
+</main>
+
+
+<footer>
+
+ <div class="contact-us">
+
+    <div class="map">
+      <script
+      type="text/javascript"
+      charset="utf-8"
+      async
+      src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4672eb6ed94486c0b3e68717154059112245058259ccdb3f5ac2bf1a8c8f5191&amp;width=100%25&amp;height=416&amp;lang=ru_RU&amp;scroll=true">
+      </script>
+    </div>
+
+    <div class="container">
+      <div class="contact-us-address">
+        <p class="big-text">NЁRDS DESIGN STUDIO</p>
+        <p>
+        191186, Санкт-Петербург,<br>
+        ул. Б. Конюшенная, д. 19/8
+        </p>
+        <p>
+        тел. +7 (812) 275-75-75
+        </p>
+       <a class="big-button write-us-button">НАПИШИТЕ НАМ</a>
+      </div>
+    </div>
+
+    <div class="modal-window">
+      <p class="big-text">Напишите нам</p>
+      <button type="button" class="modal-window-x">
+          <img src="img/close-cross.svg"
+               width="21" height="21"
+               alt="Закрыть">
+      </button>
+
+      <form action="#" method="post" class="modal-form" >
+
+        <div class="input-list">
+
+          <div>
+            <label for="sender-name">Ваше имя:</label>
+            <input type="text" name="sender-name" id="sender-name" placeholder="Имя Фамилия" class="text-input" required>
+          </div>
+
+          <div>
+            <label for="sender-email">Ваш e-mail:</label>
+            <input type="email" name="sender-email" id="sender-email" placeholder="email@example.com" class="text-input" required>
+          </div>
+
+          <div>
+            <label for="sender-message">Текст письма:</label>
+            <textarea name="sender-message" id="sender-message" placeholder="В свободной форме" class="text-input" required></textarea>
+          </div>
+
+         </div>
+
+         <input type="submit" value="ОТПРАВИТЬ" class="big-button">
+
+      </form>
+    </div>
+
+  </div>
+
+ <div class="social-info">
+  <div class="container">
+
+    <ul class="social">
+
+      <li>
+        <a class="social-button vk" href="#">
+          <img src="img/vk-icon.svg"
+               width="26" height="15"
+               alt="VK">
+        </a>
+      </li>
+
+      <li>
+        <a class="social-button fb" href="#">
+          <img src="img/fb-icon.svg"
+               width="12" height="22"
+               alt="Facebook">
+        </a>
+      </li>
+
+      <li>
+        <a class="social-button insta" href="#">
+          <img src="img/insta-icon.svg"
+               width="21" height="21"
+               alt="Instagram">
+        </a>
+      </li>
+
+    </ul>
+
+      <div class="discount">
+         <p class="big-text">Давайте дружить, это выгодно!</p>
+         <p>
+         Скидка 10% для друзей из социальных сетей.
+         </p>
+      </div>
+
+
+  </div>
+ </div>
+
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
