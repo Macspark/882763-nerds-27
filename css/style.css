@@ -59,6 +59,10 @@ ul {
   margin: 0;
 }
 
+.test {
+  max-width: 360px;
+}
+
 /* ХЭДЕР */
 
 .page-header {
