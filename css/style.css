@@ -1,15 +1,35 @@
 
 @font-face {
   font-family: 'Roboto';
-  src: url('../fonts/Roboto-Regular.woff') format('woff');
+  src: url('../fonts/Roboto-Regular.woff') format('woff'),
+       url('../fonts/Roboto-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Medium.woff') format('woff'),
+       url('../fonts/Roboto-Medium.woff2') format('woff2');
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Bold.woff') format('woff'),
+       url('../fonts/Roboto-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   background-color: white;
 }
 
@@ -34,17 +54,17 @@ body {
   border-radius: 3px;
 }
 
-p {
+.text {
   line-height: 1.5;
   font-weight: normal;
 }
 
-a {
+.link {
   text-decoration: none;
   color: black;
 }
 
-ul {
+.list {
   padding: 0;
   list-style: none;
 }
@@ -89,7 +109,7 @@ ul {
 }
 
 .buy-cart-icon {
- margin-right: 26px;
+  margin-right: 26px;
 }
 
 .page-header ul {
@@ -131,9 +151,9 @@ ul {
 }
 
 .slide-text .big-button {
-   width: 240px;
-   height: 50px;
-   background-color: #fb565a;
+  width: 240px;
+  height: 50px;
+  background-color: #fb565a;
 }
 
 .slide-text .big-text {
@@ -154,7 +174,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 40px;
-  border-bottom: 2px solid lightgrey;
+  border-bottom: 2px solid #eeeeee;
 }
 
 .can-do-item {
@@ -168,7 +188,7 @@ ul {
 }
 
 .can-do-item .can-do-img {
-   margin-bottom: 21px;
+  margin-bottom: 21px;
 }
 
 .can-do-item h3 {
@@ -452,10 +472,10 @@ ul {
 }
 
 .modal-window .big-text {
- font-size: 45px;
- font-weight: 500;
- line-height: 1;
- margin-bottom: 45px;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 45px;
 }
 
 .modal-window .input-list {
@@ -490,9 +510,9 @@ ul {
 }
 
 .modal-window textarea {
-    width: 760px;
-    height: 118px;
-    resize: none;
+  width: 760px;
+  height: 118px;
+  resize: none;
 }
 
 .modal-window .big-button {
@@ -595,14 +615,14 @@ ul {
 }
 
 .catalog-item {
- position: relative;
+  position: relative;
 
- padding: 0;
- margin: 0;
- margin-bottom: 33px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 33px;
 
- height: 615px;
- width: 360px;
+  height: 615px;
+  width: 360px;
 }
 
 .catalog-item header {
@@ -646,11 +666,11 @@ ul {
 }
 
 .catalog-item-desc p {
-   font-weight: normal;
-   line-height: 1.13;
-   color: #666666;
+  font-weight: normal;
+  line-height: 1.13;
+  color: #666666;
 
-   margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .catalog-item-desc .big-button {
