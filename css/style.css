@@ -197,7 +197,8 @@ body {
   margin: 0;
 }
 
-.can-do-item p {
+.can-do-item .text {
+  max-width: 250px;
   margin-bottom: 32px;
 }
 
@@ -233,10 +234,12 @@ body {
   line-height: 1;
   margin-bottom: 35px;
   margin-top: 33px;
+  max-width: 700px;
 }
 
 .about-us-text p {
   margin-bottom: 38px;
+  max-width: 650px;
 }
 
 .about-us .bold {
@@ -275,6 +278,10 @@ body {
   text-align: left;
 
   margin-top: 35px;
+}
+
+.number-col {
+  width: 110px;
 }
 
 .about-us-numbers p {
@@ -370,6 +377,7 @@ body {
 
 .contact-us-address p {
   line-height: 1.13;
+  max-width: 210px;
   color: #666666;
 }
 
