@@ -141,7 +141,6 @@ ul {
   font-weight: 500;
   line-height: 1;
   margin: 0;
-  margin-top: -14px;
 }
 
 .slide-text p {
@@ -204,6 +203,8 @@ ul {
 
 .about-us {
   margin-bottom: 39px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .about-us h2 {
@@ -214,19 +215,13 @@ ul {
   margin-top: 33px;
 }
 
-.about-us-head {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 5px;
+.about-us-text p {
+  margin-bottom: 38px;
 }
 
-.about-us-text {
-  display: flex;
-  justify-content: space-between;
-}
-
-.about-us-work {
-
+.about-us .bold {
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 
 .about-us-work li::before {
@@ -245,9 +240,12 @@ ul {
   align-items: center;
 }
 
-.right-block {
-  width: 360px;
+.about-us-stats {
   text-align: center;
+}
+
+.about-us-img {
+  margin-bottom: 32px;
 }
 
 .about-us-numbers {
