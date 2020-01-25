@@ -42,14 +42,13 @@ p {
 .grey-back {
   min-width: 1200px;
   background-color: #eeeeee;
-  border: 1px solid transparent;
 }
 
 /* ХЭДЕР */
 
 .page-header {
   padding-top: 55px;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 .menu {
@@ -95,18 +94,30 @@ p {
   margin-right: 45px;
 }
 
+.slider {
+  margin-bottom: 80px;
+}
+
 .slide {
   display: none;
 }
 
 .slide-active {
+  height: 413px;
   display: flex;
   align-items: center;
 }
 
-.slide-text {
- width: 376px;
- margin-right: 55px;
+.slide:nth-child(1) {
+  background: url("../img/slide-picture-1.png") no-repeat 430px 50%;
+}
+
+.slide:nth-child(2) {
+  background: url("../img/slide-picture-2.png") no-repeat 495px 50%;
+}
+
+.slide:nth-child(3) {
+  background: url("../img/slide-picture-3.png") no-repeat 400px 50%;
 }
 
 .slide-text .big-button {
@@ -127,16 +138,6 @@ p {
 .slide-text p {
   margin: 28px 0 38px;
   padding: 0;
-}
-
-.slide-img {
-  object-fit: contain;
-  width: 698px;
-  height: 413px;
-}
-
-.slider {
-  margin-bottom: 80px;
 }
 
 /* ЗАКАЗАТЬ */
