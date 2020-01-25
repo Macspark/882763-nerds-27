@@ -39,9 +39,24 @@ p {
   font-weight: normal;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
 .grey-back {
   min-width: 1200px;
   background-color: #eeeeee;
+  padding: 1px;
+}
+
+.big-text {
+  margin: 0;
 }
 
 /* ХЭДЕР */
@@ -78,15 +93,10 @@ p {
 }
 
 .page-header ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
   display: flex;
 }
 
 .page-header a {
-  text-decoration: none;
-  color: black;
   line-height: 1.88;
 }
 
@@ -132,7 +142,6 @@ p {
   line-height: 1;
   margin: 0;
   margin-top: -14px;
-  padding: 0;
 }
 
 .slide-text p {
@@ -147,8 +156,6 @@ p {
   flex-wrap: wrap;
   margin-bottom: 40px;
   border-bottom: 2px solid lightgrey;
-  padding: 0;
-  list-style: none;
 }
 
 .can-do-item {
@@ -207,11 +214,6 @@ p {
   margin-top: 33px;
 }
 
-.about-us .big-text-secondary {
-  font-size: 16px;
-  font-weight: bold;
-}
-
 .about-us-head {
   display: flex;
   justify-content: space-between;
@@ -224,8 +226,7 @@ p {
 }
 
 .about-us-work {
-  padding: 0;
-  list-style: none;
+
 }
 
 .about-us-work li::before {
@@ -249,18 +250,13 @@ p {
   text-align: center;
 }
 
-.right-block .big-text-secondary {
-  margin-bottom: 35px;
-}
-
 .about-us-numbers {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   text-align: left;
 
-  list-style: none;
-  padding: 0;
+  margin-top: 35px;
 }
 
 .about-us-numbers p {
@@ -290,9 +286,6 @@ p {
   border-bottom: 2px solid lightgrey;
 
   min-height: 180px;
-
-  list-style: none;
-  padding: 0;
 
   display: flex;
   flex-wrap: wrap;
@@ -350,9 +343,7 @@ p {
 }
 
 .contact-us-address .big-text {
-  margin: 0;
   margin-bottom: 22px;
-  padding: 0;
   font-size: 18px;
   font-weight: bold;
   line-height: 1.67;
@@ -385,8 +376,6 @@ p {
 .social {
   display: flex;
   margin-right: 127px;
-  padding: 0;
-  list-style: none;
 }
 
 .social-button {
@@ -408,7 +397,6 @@ p {
   line-height: 1;
   font-size: 36px;
   font-weight: bold;
-  margin: 0;
   margin-bottom: 12px;
   color: black;
 }
@@ -469,7 +457,7 @@ p {
  font-size: 45px;
  font-weight: 500;
  line-height: 1;
- margin-top: 0;
+ margin-bottom: 45px;
 }
 
 .modal-window .input-list {
@@ -516,33 +504,11 @@ p {
    border: none;
 }
 
-/* интерактив */
-
-.vk:hover {
-  background-color: #597da3;
-}
-
-.fb:hover {
-  background-color: #3b5998;
-}
-
-.insta:hover {
-  background-color: #bc2a8d;
-}
-
-.big-button:hover {
-  background-color: #009DE0;
-}
-
-.menu a:hover {
-  color: #009DE0;
-}
-
 /* КАТАЛОГ */
 
 .page-title {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 .page-title h1 {
@@ -561,16 +527,137 @@ p {
   margin-bottom: 60px;
 }
 
-.catalog-block {
-  border: 1px solid red;
-  width: 25%;
-  height: 700px;
-}
-
 .catalog-left {
   width: 260px;
 }
 
 .catalog-right {
   width: 760px;
+}
+
+.catalog-content .big-text {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.67;
+  letter-spacing: 0.18px;
+}
+
+.sorting {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.sorting-params,
+.sorting-arrows {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.sorting-params {
+  margin-right: 48px;
+}
+
+.sorting a {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.29;
+
+  opacity: 0.3;
+}
+
+.sorting .sort-active {
+  opacity: 1;
+}
+
+.sorting-params li {
+  margin-right: 25px;
+}
+
+.sorting-arrows li {
+  margin-right: 18px;
+}
+
+.sorting li:last-child {
+  margin-right: 0;
+}
+
+.inverted {
+  transform: rotate(180deg);
+}
+
+/* ЛИСТ ТОВАРОВ */
+
+.catalog-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 27px;
+}
+
+.catalog-item {
+ position: relative;
+
+ padding: 0;
+ margin: 0;
+ margin-bottom: 33px;
+
+ height: 615px;
+ width: 360px;
+}
+
+.catalog-item header {
+  height: 39px;
+  opacity: 0.12;
+}
+
+.catalog-item-active header {
+  opacity: 1;
+}
+
+.catalog-item-img {
+
+}
+
+.catalog-item-desc {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+
+  display: none;
+
+  min-height: 230px;
+  width: 360px;
+
+  padding: 10px 0;
+  box-sizing: border-box;
+  background-color: #eeeeee;
+  text-align: center;
+}
+
+.catalog-item:hover .catalog-item-desc {
+  display: block;
+}
+
+.catalog-item-desc h3 {
+  font-size: 18px;
+  line-height: 1.67;
+
+  margin-bottom: 25px;
+}
+
+.catalog-item-desc p {
+   font-weight: normal;
+   line-height: 1.13;
+   color: #666666;
+
+   margin-bottom: 30px;
+}
+
+.catalog-item-desc .big-button {
+  width: 200px;
+  height: 50px;
+  margin: 0 80px;
+  background-color: #fb565a;
 }
