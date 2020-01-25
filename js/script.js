@@ -3,10 +3,10 @@ let modalButton = document.querySelector('.write-us-button');
 let modalButton2 = document.querySelector('.modal-window-x');
 let active = 'modal-window-active';
 
-modalButton.onclick = function() {
+modalButton.addEventListener('click', function() {
   modalWindow.classList.add(active);
-};
+});
 
-modalButton2.onclick = function() {
+modalButton2.addEventListener('click', function() {
   modalWindow.classList.remove(active);
-};
+});
