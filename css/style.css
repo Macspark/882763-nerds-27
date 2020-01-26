@@ -126,6 +126,7 @@ body {
 
 .slider {
   margin-bottom: 80px;
+  position: relative;
 }
 
 .slide {
@@ -150,6 +151,10 @@ body {
   background: url("../img/slide-picture-3.png") no-repeat 400px 50%;
 }
 
+.slide-text {
+  padding-bottom: 20px;
+}
+
 .slide-text .big-button {
   width: 240px;
   height: 50px;
@@ -166,6 +171,36 @@ body {
 .slide-text p {
   margin: 28px 0 38px;
   padding: 0;
+}
+
+.slide-switch {
+  position: absolute;
+  bottom: 76px;
+  left: 50%;
+  display: flex;
+}
+
+.slide-switch li {
+  margin-right: 17px;
+}
+
+.slide-switch .button-active {
+  background-color: black;
+}
+
+.grey-back {background-color:white;}
+
+.slide-btn {
+  width: 18px;
+  height: 18px;
+  border: none;
+  border-radius: 50%;
+  background-color: #ffffff;
+  outline: none;
+}
+
+.slide-btn:hover {
+  cursor: pointer;
 }
 
 /* ЗАКАЗАТЬ */
@@ -333,7 +368,7 @@ body {
   background-color: lightgrey;
 }
 
-.partner-link:last-child::after {
+.partner-link:nth-child(4n)::after {
   display: none;
 }
 
