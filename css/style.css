@@ -110,6 +110,7 @@ body {
 
 .buy-cart-icon {
   margin-right: 26px;
+  opacity: 0.3;
 }
 
 .page-header ul {
@@ -175,9 +176,11 @@ body {
 
 .slide-switch {
   position: absolute;
-  bottom: 76px;
-  left: 50%;
   display: flex;
+  justify-content: center;
+  left: 50%;
+  bottom: 76px;
+  width: 20px;
 }
 
 .slide-switch li {
@@ -185,7 +188,18 @@ body {
 }
 
 .slide-switch .button-active {
-  background-color: black;
+  position: relative;
+}
+
+.button-active::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: "";
+  background-image: url("../img/button-active.svg");
+  opacity: 0.3;
 }
 
 .grey-back {background-color:white;}
