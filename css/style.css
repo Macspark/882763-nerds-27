@@ -847,13 +847,13 @@ body {
 
 .catalog-filter-priceslider-bar-button {
   width: 20px;
-  height: 23px;
+  height: 22px;
 
   background-color: #ffffff;
   outline: none;
   border: none;
   border-radius: 50%;
-  background: url("../img/filter-button.png") 50% 50%;
+  background: url("../img/filter-button.png");
   /* .svg-файл с зеплина багованный/пустой и не отображается вообще ни в какую; пришлось использовать .png*/
 
   cursor: pointer;
@@ -899,8 +899,6 @@ body {
 .catalog-filter-label:hover.catalog-filter-label::before {
   opacity: 1;
 }
-
-
 
 input[type="radio"] + .catalog-filter-label::before {
   content: "";
