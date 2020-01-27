@@ -65,6 +65,7 @@ body {
 
 .list {
   padding: 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -90,6 +91,7 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 65px;
+  font-weight: 500;
 }
 
 .menu a {
@@ -601,14 +603,14 @@ body {
   justify-content: space-between;
   align-items: flex-start;
 
-  margin-bottom: 60px;
+  margin-bottom: 45px;
 }
 
-.catalog-left {
+.catalog-content-left {
   width: 260px;
 }
 
-.catalog-right {
+.catalog-content-right {
   width: 760px;
 }
 
@@ -748,4 +750,203 @@ body {
   height: 50px;
   margin: 0 80px;
   background-color: #fb565a;
+}
+
+.catalog-pages {
+  display: flex;
+}
+
+.catalog-pages-item {
+  height: 50px;
+  width: 50px;
+
+  margin-right: 10px;
+  box-sizing: border-box;
+  border: 3px solid #eeeeee;
+  background-color: #eeeeee;
+  border-radius: 3px;
+}
+
+.catalog-pages-item:last-child {
+  width: 260px;
+}
+
+.catalog-pages-item-current {
+  border: 3px solid #dbdbdb;
+  background-color: #ffffff;
+}
+
+.catalog-pages-item .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: 500;
+  line-height: 1.13;
+  height: 100%;
+  width: 100%;
+}
+
+.catalog-filter-fieldset {
+  border: none;
+  margin-bottom: 18px;
+}
+
+.catalog-filter-fieldset legend {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.67;
+  margin-bottom: 8px;
+}
+
+.catalog-filter-fieldset input {
+  display: none;
+}
+
+.catalog-filter-fieldset li {
+  margin-bottom: 16px;
+}
+
+.catalog-filter-label {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.25;
+  color: #283136;
+  display: flex;
+  align-items: center;
+}
+
+.catalog-filter-priceslider {
+  width: 260px;
+  height: 80px;
+  background-color: #eeeeee;
+  border-radius: 3px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 35px 0 13px;
+}
+
+.catalog-filter-priceslider-bar {
+  width: 219px;
+  height: 2px;
+  background-color: #d7dcde;
+}
+
+.catalog-filter-priceslider-bar-fill {
+  height: 100%;
+  width: 152px;
+  background-color: green;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.catalog-filter-priceslider-bar-button {
+  width: 20px;
+  height: 23px;
+
+  background-color: #ffffff;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  background: url("../img/filter-button.png") 50% 50%;
+  /* .svg-файл с зеплина багованный/пустой и не отображается вообще ни в какую; пришлось использовать .png*/
+
+  cursor: pointer;
+}
+
+.catalog-filter-pricetext {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.catalog-filter-pricetext label {
+  margin-right: 13px;
+}
+
+.catalog-filter-pricetext input {
+  display: block;
+  width: 80px;
+  height: 38px;
+  background-color: #eeeeee;
+  border: none;
+  border-radius: 3px;
+
+  font-size: 16px;
+  line-height: 1.38;
+  text-align: center;
+  color: #283136;
+
+  margin-right: 31px;
+}
+
+.catalog-filter-pricetext input:last-child {
+  margin-right: 0;
+}
+
+/* ??? */
+
+.catalog-filter-label:hover {
+  cursor: pointer;
+  color: #000000;
+}
+
+.catalog-filter-label:hover.catalog-filter-label::before {
+  opacity: 1;
+}
+
+
+
+input[type="radio"] + .catalog-filter-label::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  background: url("../img/radio-off.svg") no-repeat;
+  opacity: 0.4;
+
+  margin-right: 10px;
+}
+
+input[type="radio"]:checked + .catalog-filter-label::before {
+  background: url("../img/radio-on.svg") no-repeat;
+}
+
+input[type="checkbox"] + .catalog-filter-label::before {
+  content: "";
+  width: 27px;
+  height: 23px;
+  background: url("../img/checkbox-off.svg") no-repeat;
+  opacity: 0.4;
+
+  margin-right: 8px;
+}
+
+input[type="checkbox"]:checked + .catalog-filter-label::before {
+  background: url("../img/checkbox-on.svg") no-repeat;
+}
+
+.catalog-filter-submit {
+  width: 260px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  background-color: #eeeeee;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.13;
+
+  margin: 15px;
+}
+
+.catalog-filter-submit:hover {
+  cursor: pointer;
 }

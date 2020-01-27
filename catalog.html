@@ -51,9 +51,79 @@
  <div class="container">
 
    <div class="catalog-content">
-     <div class="catalog-block catalog-left">
+     <div class="catalog-content-left">
+      <form class="catalog-filter" method="get">
+
+        <fieldset class="catalog-filter-fieldset">
+
+         <legend class="catalog-filter-fieldset-legendprice">СТОИМОСТЬ:</legend>
+         <div class="catalog-filter-priceslider">
+           <div class="catalog-filter-priceslider-bar">
+             <div class="catalog-filter-priceslider-bar-fill">
+                <button class="catalog-filter-priceslider-bar-button" type="button"></button>
+                <button class="catalog-filter-priceslider-bar-button" type="button"></button>
+             </div>
+           </div>
+         </div>
+
+         <div class="catalog-filter-pricetext">
+           <label>ОТ</label>
+           <input type="text" name="min-range" value="0">
+           <label>ДО</label>
+           <input type="text" name="max-range" value="15 000">
+         </div>
+
+        </fieldset>
+
+        <fieldset class="catalog-filter-fieldset catalog-filter-grid">
+         <legend>СЕТКА:</legend>
+         <ul class="list">
+           <li>
+             <input type="radio" name="grid" value="adaptive" id="filter-input-adaptive" checked>
+             <label class="catalog-filter-label" for="filter-input-adaptive">Адаптивная</label>
+           </li>
+           <li>
+             <input type="radio" name="grid" value="fixed" id="filter-input-fixed">
+             <label class="catalog-filter-label" for="filter-input-fixed">Фиксированная</label>
+           </li>
+           <li>
+             <input type="radio" name="grid" value="rubber" id="filter-input-rubber">
+             <label class="catalog-filter-label" for="filter-input-rubber">Резиновая</label>
+           </li>
+         </ul>
+        </fieldset>
+
+        <fieldset class="catalog-filter-fieldset catalog-filter-special">
+         <legend>ОСОБЕННОСТИ:</legend>
+         <ul class="list">
+           <li>
+             <input type="checkbox" name="special" value="slider" id="filter-input-slider" checked>
+             <label class="catalog-filter-label" for="filter-input-slider">Слайдер</label>
+           </li>
+           <li>
+             <input type="checkbox" name="special" value="advantages" id="filter-input-advantages">
+             <label class="catalog-filter-label" for="filter-input-advantages">Блок преимуществ</label>
+           </li>
+           <li>
+             <input type="checkbox" name="special" value="news" id="filter-input-news" checked>
+             <label class="catalog-filter-label" for="filter-input-news">Новости</label>
+           </li>
+           <li>
+             <input type="checkbox" name="special" value="gallery" id="filter-input-gallery">
+             <label class="catalog-filter-label" for="filter-input-gallery">Галерея</label>
+           </li>
+           <li>
+             <input type="checkbox" name="special" value="cart" id="filter-input-cart">
+             <label class="catalog-filter-label" for="filter-input-cart">Корзина</label>
+           </li>
+         </ul>
+        </fieldset>
+
+        <input class="catalog-filter-submit" type="submit" value="ПОКАЗАТЬ">
+
+      </form>
      </div>
-     <div class="catalog-block catalog-right">
+     <div class="catalog-content-right">
 
        <div class="sorting">
          <div>
@@ -182,6 +252,13 @@
            </div>
          </li>
 
+       </ul>
+
+       <ul class="catalog-pages list">
+         <li class="catalog-pages-item catalog-pages-item-current"><a class="link" href="#">1</a></li>
+         <li class="catalog-pages-item"><a class="link" href="#">2</a></li>
+         <li class="catalog-pages-item"><a class="link" href="#">3</a></li>
+         <li class="catalog-pages-item"><a class="link" href="#">СЛЕДУЮЩАЯ</a></li>
        </ul>
 
      </div>
