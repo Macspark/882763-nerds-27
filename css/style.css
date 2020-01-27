@@ -1,8 +1,8 @@
 
 @font-face {
   font-family: 'Roboto';
-  src: url('../fonts/Roboto-Regular.woff') format('woff'),
-       url('../fonts/Roboto-Regular.woff2') format('woff2');
+  src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
+       url('../fonts/Roboto-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -10,8 +10,8 @@
 
 @font-face {
   font-family: 'Roboto';
-  src: url('../fonts/Roboto-Medium.woff') format('woff'),
-       url('../fonts/Roboto-Medium.woff2') format('woff2');
+  src: url('../fonts/Roboto-Medium.woff2') format('woff2'),
+       url('../fonts/Roboto-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -19,8 +19,8 @@
 
 @font-face {
   font-family: 'Roboto';
-  src: url('../fonts/Roboto-Bold.woff') format('woff'),
-       url('../fonts/Roboto-Bold.woff2') format('woff2');
+  src: url('../fonts/Roboto-Bold.woff2') format('woff2'),
+       url('../fonts/Roboto-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -30,7 +30,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", "Arial", sans-serif;
-  background-color: white;
 }
 
 .container {
@@ -46,7 +45,7 @@ body {
   align-items: center;
 
   text-decoration: none;
-  color: white;
+  color: #ffffff;
 
   cursor: pointer;
   box-sizing: border-box;
@@ -61,7 +60,7 @@ body {
 
 .link {
   text-decoration: none;
-  color: black;
+  color: #000000;
 }
 
 .list {
@@ -416,7 +415,7 @@ body {
   box-sizing: border-box;
   width: 319px;
   height: 308px;
-  background-color: white;
+  background-color: #ffffff;
 }
 
 .contact-us-address .big-text {
@@ -424,7 +423,7 @@ body {
   font-size: 18px;
   font-weight: bold;
   line-height: 1.67;
-  color: black;
+  color: #000000;
 }
 
 .contact-us-address p {
@@ -504,7 +503,7 @@ body {
 
   padding: 70px 100px 0;
 
-  background-color: white;
+  background-color: #ffffff;
 }
 
 .modal-window-active {
