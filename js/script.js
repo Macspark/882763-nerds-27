@@ -1,16 +1,16 @@
-let modalWindow = document.querySelector('.modal-window');
-let modalButton = document.querySelector('.write-us-button');
-let modalButton2 = document.querySelector('.modal-window-x');
-let modalActive= 'modal-window-active';
+let modalWindow = document.querySelector('.modal');
+let modalButton = document.querySelector('.contact__button');
+let modalButton2 = document.querySelector('.modal__close');
+let modalActive= 'modal--active';
 
-let slideBtn1 = document.querySelector('.activate-1');
-let slideBtn2 = document.querySelector('.activate-2');
-let slideBtn3 = document.querySelector('.activate-3');
-let slide1 = document.querySelector('.slide-1');
-let slide2 = document.querySelector('.slide-2');
-let slide3 = document.querySelector('.slide-3');
-let slideBtnActive = 'button-active';
-let slideActive = 'slide-active';
+let slideBtn1 = document.querySelector('.slider__switcher1');
+let slideBtn2 = document.querySelector('.slider__switcher2');
+let slideBtn3 = document.querySelector('.slider__switcher3');
+let slide1 = document.querySelector('.slider__slide1');
+let slide2 = document.querySelector('.slider__slide2');
+let slide3 = document.querySelector('.slider__slide3');
+let slideBtnActive = 'slider__switcher--active';
+let slideActive = 'slider__slide--active';
 
 
 modalButton.addEventListener('click', function() {

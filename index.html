@@ -8,36 +8,28 @@
 <body>
 
 
-<header class="page-header grey-back">
+<header class="header grey-back">
  <div class="container">
 
-   <div class="menu">
-
-     <a class="logo" href="index.html">
+   <nav class="header__nav">
+     <a class="header__item header__logo" href="index.html">
        <img src="./img/nerds-logo.svg"
-            class="nerds-logo"
             width= "160" height="65"
             alt="Лого студии Nёrds">
      </a>
-
-     <nav>
-       <ul class="menu-buttons list">
-        <li><a class="link" href="#">СТУДИЯ</a></li>
-        <li><a class="link" href="#">КЛИЕНТЫ</a></li>
-        <li><a class="link" href="catalog.html">МАГАЗИН</a></li>
-        <li><a class="link" href="#">КОНТАКТЫ</a></li>
-       </ul>
-     </nav>
-
-     <a class="buy-cart link" href="#">
-        <img src="./img/buy-cart-icon.svg"
-             class="buy-cart-icon"
-             width="15" height="15"
-             alt="Корзина">
-             КОРЗИНА
+     <ul class="header__mainmenu">
+        <li><a class="header__item" href="#">СТУДИЯ</a></li>
+        <li><a class="header__item" href="#">КЛИЕНТЫ</a></li>
+        <li><a class="header__item" href="catalog.html">МАГАЗИН</a></li>
+        <li><a class="header__item" href="#">КОНТАКТЫ</a></li>
+     </ul>
+     <a class="header__item header__cart" href="#">
+       <img src="./img/buy-cart-icon.svg"
+            width="15" height="15"
+            alt="">
+       КОРЗИНА
      </a>
-
-   </div>
+   </nav>
 
  </div>
 </header>
@@ -45,35 +37,35 @@
 <div class="slider grey-back">
  <div class="container">
 
-     <div class="slide slide-1 slide-active">
-        <div class="slide-text">
-          <p class="big-text">Долго, дорого, скрупулезно.</p>
-          <p class="text">Математически выверенный дизайн для&nbsp;вашего&nbsp;сайта или мобильного приложения.</p>
-          <a class="big-button" href="#">УЗНАТЬ БОЛЬШЕ</a>
+     <div class="slider__slide slider__slide1 slider__slide--active">
+        <div class="slider__content">
+          <p class="slider__title">Долго, дорого, скрупулезно.</p>
+          <p class="slider__text">Математически выверенный дизайн для&nbsp;вашего&nbsp;сайта или мобильного приложения.</p>
+          <a class="slider__button" href="#">УЗНАТЬ БОЛЬШЕ</a>
         </div>
       </div>
 
-      <div class="slide slide-2">
-         <div class="slide-text">
-           <p class="big-text">Любим математику как никто другой</p>
-           <p class="text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-           <a class="big-button" href="#">УЗНАТЬ БОЛЬШЕ</a>
+      <div class="slider__slide slider__slide2">
+         <div class="slider__content">
+           <p class="slider__title">Любим математику как никто другой</p>
+           <p class="slider__text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+           <a class="slider__button" href="#">УЗНАТЬ БОЛЬШЕ</a>
          </div>
 
        </div>
 
-       <div class="slide slide-3">
-          <div class="slide-text">
-            <p class="big-text">Только ночь, только хардкор</p>
-            <p class="text">Работать днем, как все? Мы против этого. Ближе&nbsp;к&nbsp;полуночи работа только начинается.</p>
-            <a class="big-button" href="#">УЗНАТЬ БОЛЬШЕ</a>
+       <div class="slider__slide slider__slide3">
+          <div class="slider__content">
+            <p class="slider__title">Только ночь, только хардкор</p>
+            <p class="slider__text">Работать днем, как все? Мы против этого. Ближе&nbsp;к&nbsp;полуночи работа только начинается.</p>
+            <a class="slider__button" href="#">УЗНАТЬ БОЛЬШЕ</a>
           </div>
         </div>
 
-        <ul class="slide-switch list">
-           <li><button type="button" class="slide-btn activate-1 button-active"></button></li>
-           <li><button type="button" class="slide-btn activate-2"></button></li>
-           <li><button type="button" class="slide-btn activate-3"></button></li>
+        <ul class="slider__controls">
+           <li><button type="button" class="slider__switcher slider__switcher1 slider__switcher--active"></button></li>
+           <li><button type="button" class="slider__switcher slider__switcher2"></button></li>
+           <li><button type="button" class="slider__switcher slider__switcher3"></button></li>
         </ul>
 
  </div>
@@ -83,84 +75,84 @@
  <div class="container">
 
   <section>
-   <ul class="can-do-list list">
+   <ul class="features">
 
-    <li class="can-do-item">
-      <div class="can-do-img">
+    <li class="features__item">
+      <div class="features__img">
        <img src="./img/advantage-picture-red.jpg"
             width="300" height="146"
             alt="">
       </div>
-      <h3>ВЕБ-САЙТЫ</h3>
-      <p class="text">Мир никогда не будет прежним после того как увидит как сайт!</p>
-      <a class="big-button big-button-red" href="#">ЗАКАЗАТЬ</a>
+      <h3 class="features__title">ВЕБ-САЙТЫ</h3>
+      <p class="features__text">Мир никогда не будет прежним после того как увидит как сайт!</p>
+      <a class="features__button features__button--red" href="#">ЗАКАЗАТЬ</a>
     </li>
 
-    <li class="can-do-item">
-      <div class="can-do-img">
+    <li class="features__item">
+      <div class="features__img">
        <img src="./img/advantage-picture-green.jpg"
             width="300" height="146"
             alt="">
       </div>
-      <h3>ПРИЛОЖЕНИЯ</h3>
-      <p class="text">Покорите топ-10 приложений в AppStore и Google Play</p>
-      <a class="big-button big-button-green" href="#">ЗАКАЗАТЬ</a>
+      <h3 class="features__title">ПРИЛОЖЕНИЯ</h3>
+      <p class="features__text">Покорите топ-10 приложений в AppStore и Google Play</p>
+      <a class="features__button features__button--green" href="#">ЗАКАЗАТЬ</a>
     </li>
 
-    <li class="can-do-item">
-      <div class="can-do-img">
+    <li class="features__item">
+      <div class="features__img">
        <img src="./img/advantage-picture-yellow.jpg"
             width="300" height="146"
             alt="">
       </div>
-      <h3>ПРЕЗЕНТАЦИИ</h3>
-      <p class="text">Вы даже не подозреваете, насколько вы изумительны!</p>
-      <a class="big-button big-button-yellow" href="#">ЗАКАЗАТЬ</a>
+      <h3 class="features__title">ПРЕЗЕНТАЦИИ</h3>
+      <p class="features__text">Вы даже не подозреваете, насколько вы изумительны!</p>
+      <a class="features__button features__button--yellow" href="#">ЗАКАЗАТЬ</a>
     </li>
 
    </ul>
   </section>
 
-  <div class="about-us">
+  <div class="company">
 
-    <div class="about-us-text">
-        <h2>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
-        <p class="text">
+    <div class="company__desc">
+        <h2 class="company__title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
+        <p class="company__text">
           Исповедуем принципы минимализма и чистоты. Ставим математический расчет
           превыше креатива. Работаем не покладая рук, как роботы.
         </p>
-        <p class="bold text">ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ:</p>
-        <ul class="about-us-work list">
+        <p class="company__title company__title--small"><b>ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ:</b></p>
+        <ul class="company__possibilities">
           <li>Веб-сайтов любой сложности</li>
           <li>Мобильных приложений для iOS и Android</li>
           <li>Слайдшоу и видео для корпоративных презентаций</li>
         </ul>
     </div>
 
-    <div class="about-us-stats">
+    <div class="company__stats">
 
-      <div class="about-us-img">
+      <div class="company__img">
          <img src="./img/nerds-picture.png"
               width="360" height="208"
               alt="Логотип студии Nёrds">
       </div>
 
-      <p class="bold text">С 2004 ГОДА ЛЮБИМ ТОЧНОСТЬ ВО ВСЕМ:</p>
-      <ul class="about-us-numbers list">
+      <p class="company__title company__title--small"><b>С 2004 ГОДА ЛЮБИМ ТОЧНОСТЬ ВО ВСЕМ:</b></p>
+      <ul class="company__numbers">
 
-       <li class="number-col">
-         <span class="number">146<sup>%</sup></span>
-         <p class="text">Уровень самоотдачи</p>
+       <li>
+         <span>146<sup>%</sup></span>
+         <p>Уровень самоотдачи</p>
        </li>
 
-       <li class="number-col">
-         <span class="number">100<sup>%</sup></span>
-         <p class="text">Соблюдение сроков</p>
+       <li>
+         <span>100<sup>%</sup></span>
+         <p>Соблюдение сроков</p>
        </li>
 
-       <li class="number-col">
-         <span class="number">50<sup>%</sup></span>
-         <p class="text">Минимальная предоплата</p>
+       <li>
+         <span>50<sup>%</sup></span>
+         <p>Минимальная предоплата</p>
        </li>
       </ul>
 
@@ -168,9 +160,9 @@
 
   </div>
 
-  <ul class="our-partners list">
+  <ul class="partners">
 
-   <li class="partner-link">
+   <li class="partners__item">
      <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
        <img src="./img/htmlacademy-logo.png"
             width="199" height="68"
@@ -178,7 +170,7 @@
      </a>
    </li>
 
-   <li class="partner-link">
+   <li class="partners__item">
      <a href="#">
        <img src="./img/borodinski-logo.png"
             width="209" height="90"
@@ -186,7 +178,7 @@
      </a>
    </li>
 
-   <li class="partner-link">
+   <li class="partners__item">
      <a href="#">
        <img src="./img/pink-logo.png"
             width="185" height="52"
@@ -194,7 +186,7 @@
      </a>
    </li>
 
-   <li class="partner-link">
+   <li class="partners__item">
      <a href="#">
        <img src="./img/mishka-logo.png"
             width="173" height="84"
@@ -210,9 +202,8 @@
 
 <footer>
 
- <div class="contact-us">
-
-    <div class="map">
+ <div class="contact">
+    <div class="contact__map">
       <script
       type="text/javascript"
       charset="utf-8"
@@ -222,75 +213,75 @@
     </div>
 
     <div class="container">
-      <div class="contact-us-address">
-        <p class="big-text">NЁRDS DESIGN STUDIO</p>
-        <p class="text">
+      <div class="contact__address">
+        <p class="contact__title">NЁRDS DESIGN STUDIO</p>
+        <p class="contact__text">
           191186, Санкт-Петербург,
           ул. Б. Конюшенная, д. 19/8
         </p>
-        <p class="text">
+        <p class="contact__text">
           тел. +7 (812) 275-75-75
         </p>
-       <a class="big-button write-us-button">НАПИШИТЕ НАМ</a>
+       <a class="contact__button">НАПИШИТЕ НАМ</a>
       </div>
     </div>
+ </div>
 
-    <div class="modal-window">
-      <p class="big-text">Напишите нам</p>
-      <button type="button" class="modal-window-x">
-          <img src="./img/close-cross.svg"
-               width="21" height="21"
-               alt="Закрыть">
-      </button>
+ <div class="modal">
+   <p class="modal__title">Напишите нам</p>
 
-      <form action="#" method="post" class="modal-form" >
+   <button type="button" class="modal__close">
+       <img src="./img/close-cross.svg"
+            width="21" height="21"
+            alt="Закрыть">
+   </button>
 
-        <div class="input-list">
+   <form action="#" method="post" class="modal__form" >
 
-          <div>
-            <label for="sender-name">Ваше имя:</label>
-            <input type="text" name="name" id="sender-name" placeholder="Имя Фамилия" class="text-input" required>
-          </div>
+     <div class="modal__field">
 
-          <div>
-            <label for="sender-email">Ваш e-mail:</label>
-            <input type="email" name="email" id="sender-email" placeholder="email@example.com" class="text-input" required>
-          </div>
+       <div>
+         <label for="sender-name">Ваше имя:</label>
+         <input type="text" name="name" id="sender-name" placeholder="Имя Фамилия" required>
+       </div>
 
-          <div>
-            <label for="sender-message">Текст письма:</label>
-            <textarea name="message" id="sender-message" placeholder="В свободной форме" class="text-input" required></textarea>
-          </div>
+       <div>
+         <label for="sender-email">Ваш e-mail:</label>
+         <input type="email" name="email" id="sender-email" placeholder="email@example.com" required>
+       </div>
 
-         </div>
+       <div>
+         <label for="sender-message">Текст письма:</label>
+         <textarea name="message" id="sender-message" placeholder="В свободной форме" required></textarea>
+       </div>
 
-         <input type="submit" value="ОТПРАВИТЬ" class="big-button">
+      </div>
 
-      </form>
-    </div>
+      <input type="submit" value="ОТПРАВИТЬ" class="modal__button">
 
-  </div>
+   </form>
+ </div>
 
- <div class="social-info">
+ <div class="social">
   <div class="container">
 
-    <ul class="social list">
+    <ul class="social__list">
       <li>
-        <a class="social-button vk" href="#">
+        <a class="social__button social__button--vk" href="#">
           <img src="./img/vk-icon.svg"
                width="26" height="15"
                alt="VK">
         </a>
       </li>
       <li>
-        <a class="social-button fb" href="#">
+        <a class="social__button social__button--fb" href="#">
           <img src="./img/fb-icon.svg"
                width="12" height="22"
                alt="Facebook">
         </a>
       </li>
       <li>
-        <a class="social-button insta" href="#">
+        <a class="social__button social__button--insta" href="#">
           <img src="./img/insta-icon.svg"
                width="21" height="21"
                alt="Instagram">
@@ -298,9 +289,9 @@
       </li>
     </ul>
 
-    <div class="discount">
-       <p class="big-text">Давайте дружить, это выгодно!</p>
-       <p class="text">
+    <div class="social__discount">
+       <p class="social__title">Давайте дружить, это выгодно!</p>
+       <p class="social__text">
          Скидка 10% для друзей из социальных сетей.
        </p>
     </div>
