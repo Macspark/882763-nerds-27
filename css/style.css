@@ -716,22 +716,23 @@ a {
 
 /* КАТАЛОГ */
 
-.title {
-  text-align: center;
-  margin-bottom: 40px;
+.catalog {
+
 }
 
-.title__text {
-  margin: 66px;
-  margin-bottom: 100px;
+.catalog__title {
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.catalog__title h1 {
+  margin: 55px 0 102px;
 
   font-size: 55px;
   font-weight: 500;
 }
 
-
-
-.catalog {
+.catalog__content {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -745,7 +746,6 @@ a {
 
 .catalog__block--right {
   width: 760px;
-
 }
 
 .sorting__title {
@@ -771,13 +771,13 @@ a {
   display: flex;
   align-items: center;
 
-  padding: 0;
+  padding: 3px 0 0;
   margin: 0;
   list-style: none;
 }
 
 .sorting__parameters {
-  margin-right: 48px;
+  margin-right: 50px;
 }
 
 .sorting__item {
@@ -819,10 +819,9 @@ a {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 27px;
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin-bottom: 27px;
 }
 
 .product__item {
@@ -935,7 +934,12 @@ a {
   height: 50px;
   width: 50px;
 
-  margin-right: 10px;
+  font-weight: 500;
+  text-align: center;
+
+  padding: 14px 0;
+  margin-right: 11px;
+
   box-sizing: border-box;
   border: 3px solid #eeeeee;
   background-color: #eeeeee;
@@ -962,17 +966,6 @@ a {
   background-color: #ffffff;
 }
 
-.page__item a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  font-weight: 500;
-  line-height: 1.13;
-  height: 100%;
-  width: 100%;
-}
-
 .filter {
   margin: 0;
   padding: 0;
@@ -980,8 +973,12 @@ a {
 
 .filter__fieldset {
   border: none;
-  margin: 0 0 27px;
-  padding: 0;
+  margin: 0 0 23px;
+  padding: 0 0 0 1px;
+}
+
+.filter__fieldset:first-child {
+  margin-bottom: 28px;
 }
 
 .filter__title {
@@ -989,6 +986,7 @@ a {
   font-weight: bold;
   line-height: 1.67;
   margin-bottom: 13px;
+  padding: 0;
 }
 
 .filter__fieldset input {
@@ -1002,7 +1000,7 @@ a {
 }
 
 .filter__fieldset li {
-  margin: 0 0 16px;
+  margin: 0 0 17px;
 }
 
 .filter__label {
@@ -1028,7 +1026,7 @@ a {
   align-items: center;
   justify-content: center;
 
-  margin: 35px 0 13px;
+  margin: 35px 0 14px;
 }
 
 .filter__bar {
@@ -1068,13 +1066,13 @@ a {
 }
 
 .filter__range label {
-  margin-right: 13px;
+  margin-right: 11px;
 }
 
 .filter__range input {
   display: block;
   width: 80px;
-  height: 38px;
+  height: 36px;
   background-color: #eeeeee;
   border: none;
   border-radius: 3px;
@@ -1084,7 +1082,7 @@ a {
   text-align: center;
   color: #283136;
 
-  margin-right: 31px;
+  margin-right: 35px;
 }
 
 .filter__range input:last-child {
@@ -1148,7 +1146,7 @@ input[type="checkbox"]:checked + .filter__label::before {
   font-weight: 500;
   line-height: 1.13;
 
-  margin: 15px;
+  margin: 34px 0 0;
 }
 
 .filter__submit:hover {
