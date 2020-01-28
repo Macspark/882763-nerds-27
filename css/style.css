@@ -996,6 +996,7 @@ a {
   line-height: 1.67;
   margin-bottom: 13px;
   padding: 0;
+  letter-spacing: 0.25px;
 }
 
 .filter__fieldset input {
