@@ -65,12 +65,24 @@ a {
   font-weight: 500;
 }
 
+.header__logo:hover {
+  opacity: 0.6;
+}
+
+.header__logo:active {
+  opacity: 0.3;
+}
+
 .header__item {
   position: relative;
 }
 
 .header__item:hover {
   color: #F48A98;
+}
+
+.header__item:active {
+  color: #BFBFBF;
 }
 
 .header__item--current::after {
@@ -151,6 +163,16 @@ a {
   justify-content: center;
   margin-bottom: 20px;
   border-radius: 3px;
+}
+
+.slider__button:hover {
+  background-color: #E74246;
+  color: #F9FCF5;
+}
+
+.slider__button:active {
+  background-color: #D7363B;
+  color: #E48889;
 }
 
 .slider__controls {
@@ -242,12 +264,42 @@ a {
   background-color: #fb565a;
 }
 
+.features__button--red:hover {
+  background-color: #E74246;
+  color: #FFFCF8;
+}
+
+.features__button--red:active {
+  background-color: #D7363B;
+  color: #E18B8A;
+}
+
 .features__button--green {
   background-color: #00ca74;
 }
 
+.features__button--green:hover {
+  background-color: #01BC6D;
+  color: #FBFDFA;
+}
+
+.features__button--green:active {
+  background-color: #00AA61;
+  color: #74CBA0;
+}
+
 .features__button--yellow {
   background-color: #efc84a;
+}
+
+.features__button--yellow:hover {
+  background-color: #EAB533;
+  color: #FFF8F2;
+}
+
+.features__button--yellow:active {
+  background-color: #E6A823;
+  color: #EEC478;
 }
 
 /* О НАС */
@@ -358,6 +410,15 @@ a {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  opacity: 0.2;
+}
+
+.partners__item:hover {
+  opacity: 1;
+}
+
+.partners__item:active {
+  opacity: 0.1;
 }
 
 .partners__item::after {
@@ -428,6 +489,16 @@ a {
   justify-content: center;
   cursor: pointer;
   border-radius: 3px;
+}
+
+.contact__button:hover {
+  background-color: #E74246;
+  color: #F9FCF5;
+}
+
+.contact__button:active {
+  background-color: #D7363B;
+  color: #E48889;
 }
 
 /* модальное окно */
@@ -549,6 +620,8 @@ a {
    color: #ffffff;
    font-weight: 500;
    border: none;
+   font-family: inherit;
+   font-size: 16px;
 
    display: flex;
    align-items: center;
@@ -556,6 +629,16 @@ a {
 
    cursor: pointer;
    border-radius: 3px;
+}
+
+.modal__button:hover {
+  background-color: #E74246;
+  color: #F9FCF5;
+}
+
+.modal__button:active {
+  background-color: #D7363B;
+  color: #E48889;
 }
 
 .social .container {
@@ -589,7 +672,11 @@ a {
 }
 
 .social__button:active {
-  background-color: #E74246;
+  background-color: #D1383A;
+}
+
+.social__button:active img {
+  opacity: 0.3;
 }
 
 .social__discount {
@@ -687,6 +774,7 @@ a {
   opacity: 0.6;
 }
 
+.sorting__item:active,
 .sorting__item--active {
   opacity: 1;
 }
@@ -907,6 +995,10 @@ a {
   color: #283136;
   display: flex;
   align-items: center;
+}
+
+.filter__input:disabled + .filter__label {
+  opacity: 0.12;
 }
 
 .filter__slider {
