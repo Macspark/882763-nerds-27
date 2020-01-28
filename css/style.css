@@ -867,23 +867,23 @@ a {
 
   display: none;
 
-  min-height: 230px;
   width: 360px;
 
-  padding: 10px 0;
+  padding: 10px 0 44px;
   box-sizing: border-box;
   background-color: #eeeeee;
 }
 
 .product__item:hover .product__desc {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   align-items: center;
 }
 
 .product__title {
   font-size: 18px;
   line-height: 1.67;
+  margin: 17px 0 15px;
 }
 
 .product__title:hover a {
@@ -900,15 +900,12 @@ a {
   color: #666666;
   text-align: center;
   max-width: 250px;
-
-  margin: 0;
-  margin-bottom: 30px;
+  margin: 0 0 29px;
 }
 
 .product__button {
   width: 200px;
   height: 50px;
-  margin: 0 80px;
   background-color: #fb565a;
   border-radius: 3px;
 
