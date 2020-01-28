@@ -47,14 +47,15 @@ a {
 .grey-back {
   min-width: 1200px;
   background-color: #eeeeee;
-  padding: 1px;
+  border: 0.1px solid transparent;
+  box-sizing: border-box;
 }
 
 /* ХЭДЕР */
 
 .header {
   padding-top: 57px;
-  padding-bottom: 8px;
+  padding-bottom: 10px;
 }
 
 .header__nav {
@@ -104,6 +105,8 @@ a {
   padding: 0;
   list-style: none;
   display: flex;
+
+  letter-spacing: 0.15px;
 }
 
 .header__mainmenu .header__item {
@@ -130,7 +133,7 @@ a {
 }
 
 .slider__slide:nth-child(1) {
-  background: url("../img/slide-picture-1.png") no-repeat 430px 50%;
+  background: url("../img/slide-picture-1.png") no-repeat 431px 50%;
 }
 
 .slider__slide:nth-child(2) {
@@ -143,7 +146,7 @@ a {
 
 .slider__content {
   box-sizing: border-box;
-  padding-top: 61px;
+  padding-top: 60px;
 }
 
 .slider__title {
@@ -151,11 +154,11 @@ a {
   font-weight: 500;
   line-height: 1;
   max-width: 515px;
-  margin: 0 0 25px;
+  margin: 0 0 26px;
 }
 
 .slider__text {
-  margin: 0 0 40px;
+  margin: 0 0 39px;
   line-height: 1.5;
   width: 410px;
 }
@@ -189,8 +192,8 @@ a {
   display: flex;
   justify-content: center;
   left: 50%;
-  bottom: 76px;
-  width: 20px;
+  bottom: 77px;
+  width: 18px;
   list-style: none;
   padding: 0;
 }
@@ -256,6 +259,7 @@ a {
   max-width: 250px;
   margin-bottom: 32px;
   line-height: 1.5;
+  letter-spacing: 0.17px;
 }
 
 .features__button {
@@ -335,6 +339,7 @@ a {
 
 .company__title--small {
   font-size: 16px;
+  letter-spacing: 0.1px;
 }
 
 .company__desc .company__title--small {
@@ -586,8 +591,7 @@ a {
   margin-bottom: 12px;
 }
 
-.modal__field input,
-.modal__field textarea {
+.modal__input {
   width: 360px;
   height: 50px;
 
@@ -606,22 +610,19 @@ a {
   background-color: #ffffff;
 }
 
-.modal__field input:focus,
-.modal__field textarea:focus {
-  border: 2px solid #000000;
-  color: #000000;
+.modal__input:not(:placeholder-shown):invalid {
+  border: 2px solid #ff0000;
+  color: #ff0000;
 }
 
-.modal__field input:hover,
-.modal__field textarea:hover {
+.modal__input {
   border: 2px solid #B4BABA;
   color: #000000;
 }
 
-.modal__field input:not(:placeholder-shown):invalid,
-.modal__field textarea:not(:placeholder-shown):invalid {
-  border: 2px solid #ff0000;
-  color: #ff0000;
+.modal__field .modal__input:focus {
+  border: 2px solid #000000;
+  color: #000000;
 }
 
 .modal__field textarea {
@@ -706,6 +707,7 @@ a {
   margin-bottom: 12px;
   color: black;
   margin: 0 0 12px;
+  letter-spacing: 0.12px;
 }
 
 .social__text {
@@ -1074,6 +1076,7 @@ a {
   width: 80px;
   height: 36px;
   background-color: #eeeeee;
+  outline: none;
   border: none;
   border-radius: 3px;
 
