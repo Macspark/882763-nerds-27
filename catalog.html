@@ -4,19 +4,20 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
+  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
 
-  <header class="header grey-back">
+  <header class="header">
     <div class="container">
 
       <nav class="header__nav">
         <a class="header__item header__logo" href="index.html">
           <img src="./img/nerds-logo.svg" width="160" height="65" alt="Лого студии Nёrds">
         </a>
-        <ul class="header__mainmenu">
+        <ul class="header__main-menu">
           <li><a class="header__item" href="#">СТУДИЯ</a></li>
           <li><a class="header__item" href="#">КЛИЕНТЫ</a></li>
           <li><a class="header__item header__item--current" href="catalog.html">МАГАЗИН</a></li>
@@ -32,20 +33,20 @@
 
   <main class="catalog">
 
-    <div class="catalog__title grey-back">
+    <div class="catalog__title">
       <h1>Магазин готовых шаблонов</h1>
     </div>
 
     <div class="catalog__content container">
       <div class="catalog__block catalog__block--left">
-        <form class="filter" method="get">
+        <form class="filter" action="https://echo.htmlacademy.ru" method="get">
 
           <fieldset class="filter__fieldset">
 
             <legend class="filter__title">СТОИМОСТЬ:</legend>
             <div class="filter__slider">
               <div class="filter__bar">
-                <div class="filter__bar--fill">
+                <div class="filter__bar-fill">
                   <button class="filter__button" type="button"></button>
                   <button class="filter__button" type="button"></button>
                 </div>
@@ -53,10 +54,10 @@
             </div>
 
             <div class="filter__range">
-              <label>ОТ</label>
-              <input type="text" class="filter__input" name="min-range" value="0">
-              <label>ДО</label>
-              <input type="text" class="filter__input" name="max-range" value="15 000">
+              <label for="filter__range-min">ОТ</label>
+              <input type="text" class="filter__input" id="filter__range-min" name="min-range" value="0">
+              <label for="filter__range-max">ДО</label>
+              <input type="text" class="filter__input" id="filter__range-max" name="max-range" value="15 000">
             </div>
 
           </fieldset>
@@ -124,7 +125,7 @@
             <ul class="sorting__arrows">
               <li>
                 <a class="sorting__item sorting__item--active" href="#">
-                  <img src="img/arrow-up.svg" class="sorting__arrow--inverted" width="11" height="10" alt="По убыванию">
+                  <img src="img/arrow-up.svg" class="sorting__inverted" width="11" height="10" alt="По убыванию">
                 </a>
               </li>
               <li>
@@ -262,7 +263,7 @@
         <img src="./img/close-cross.svg" width="21" height="21" alt="Закрыть">
       </button>
 
-      <form action="#" method="post" class="modal__form">
+      <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
 
         <div class="modal__field">
 

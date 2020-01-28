@@ -44,18 +44,13 @@ a {
   color: #000000;
 }
 
-.grey-back {
-  min-width: 1200px;
-  background-color: #eeeeee;
-  border: 0.1px solid transparent;
-  box-sizing: border-box;
-}
-
 /* ХЭДЕР */
 
 .header {
   padding-top: 57px;
   padding-bottom: 10px;
+  background-color: #eeeeee;
+  border: 0.1px solid transparent;
 }
 
 .header__nav {
@@ -101,7 +96,7 @@ a {
   background-color: #fb565a;
 }
 
-.header__mainmenu {
+.header__main-menu {
   padding: 0;
   list-style: none;
   display: flex;
@@ -109,7 +104,7 @@ a {
   letter-spacing: 0.15px;
 }
 
-.header__mainmenu .header__item {
+.header__main-menu .header__item {
   margin-right: 45px;
 }
 
@@ -121,6 +116,8 @@ a {
 .slider {
   margin-bottom: 80px;
   position: relative;
+  background-color: #eeeeee;
+  border: 0.1px solid transparent;
 }
 
 .slider__slide {
@@ -318,7 +315,7 @@ a {
 /* О НАС */
 
 .company {
-  margin-bottom: 42px;
+  margin-bottom: 45px;
   display: flex;
   justify-content: space-between;
 }
@@ -340,6 +337,7 @@ a {
 }
 
 .company__title--small {
+  font-weight: bold;
   font-size: 16px;
   letter-spacing: 0.1px;
 }
@@ -601,7 +599,6 @@ a {
   margin-bottom: 32px;
   box-sizing: border-box;
 
-  font-family: inherit;
   font-weight: normal;
   font-size: 16px;
   line-height: 1.13;
@@ -640,7 +637,6 @@ a {
    color: #ffffff;
    font-weight: 500;
    border: none;
-   font-family: inherit;
    font-size: 16px;
 
    display: flex;
@@ -726,10 +722,12 @@ a {
 .catalog__title {
   text-align: center;
   margin-bottom: 55px;
+  background-color: #eeeeee;
+  border: 0.1px solid transparent;
 }
 
 .catalog__title h1 {
-  margin: 55px 0 102px;
+  margin: 55px 0 105px;
 
   font-size: 55px;
   font-weight: 500;
@@ -799,7 +797,7 @@ a {
   opacity: 1;
 }
 
-.sorting__arrow--inverted {
+.sorting__inverted {
   transform: rotate(180deg);
 }
 
@@ -824,7 +822,7 @@ a {
   flex-wrap: wrap;
   list-style: none;
   padding: 0;
-  margin-bottom: 27px;
+  margin-bottom: 26px;
 }
 
 .product__item {
@@ -832,7 +830,7 @@ a {
 
   padding: 0;
   margin: 0;
-  margin-bottom: 33px;
+  margin-bottom: 34px;
 
   padding-top: 39px;
   width: 360px;
@@ -949,7 +947,7 @@ a {
   height: 100%;
   width: 100%;
 
-  padding: 14px 0;
+  padding: 15px 0;
   box-sizing: border-box;
 }
 
@@ -1045,7 +1043,7 @@ a {
   background-color: #d7dcde;
 }
 
-.filter__bar--fill {
+.filter__bar-fill {
   height: 100%;
   width: 160px;
   background-color: green;
