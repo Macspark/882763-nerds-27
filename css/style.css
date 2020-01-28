@@ -69,6 +69,10 @@ a {
   position: relative;
 }
 
+.header__item:hover {
+  color: #F48A98;
+}
+
 .header__item--current::after {
   content: "";
   position: absolute;
@@ -469,6 +473,11 @@ a {
   opacity: 1;
 }
 
+.modal__close:active {
+  cursor: pointer;
+  opacity: 0.12;
+}
+
 .modal__title {
   font-size: 45px;
   font-weight: 500;
@@ -503,9 +512,28 @@ a {
   font-size: 16px;
   line-height: 1.13;
 
-  border: solid 2px #d7dcde;
+  outline: none;
+  border: 2px solid #d7dcde;
   border-radius: 3px;
   background-color: #ffffff;
+}
+
+.modal__field input:focus,
+.modal__field textarea:focus {
+  border: 2px solid #000000;
+  color: #000000;
+}
+
+.modal__field input:hover,
+.modal__field textarea:hover {
+  border: 2px solid #B4BABA;
+  color: #000000;
+}
+
+.modal__field input:not(:placeholder-shown):invalid,
+.modal__field textarea:not(:placeholder-shown):invalid {
+  border: 2px solid #ff0000;
+  color: #ff0000;
 }
 
 .modal__field textarea {
@@ -554,6 +582,14 @@ a {
   font-weight: 500;
   background-color: #e1e1e1;
   border-radius: 50%;
+}
+
+.social__button:hover {
+  background-color: #E74246;
+}
+
+.social__button:active {
+  background-color: #E74246;
 }
 
 .social__discount {
@@ -645,6 +681,10 @@ a {
   font-weight: normal;
   line-height: 1.29;
   opacity: 0.3;
+}
+
+.sorting__item:hover {
+  opacity: 0.6;
 }
 
 .sorting__item--active {
@@ -739,6 +779,14 @@ a {
   line-height: 1.67;
 }
 
+.product__title:hover a {
+  color: #F3565D;
+}
+
+.product__title:active a {
+  color: #CBCBCB;
+}
+
 .product__text {
   font-weight: normal;
   line-height: 1.13;
@@ -764,6 +812,14 @@ a {
   font-weight: 500;
 }
 
+.product__button:hover {
+  background-color: #E74246;
+}
+
+.product__button:active {
+  background-color: #D7363B;
+}
+
 .page {
   display: flex;
   list-style: none;
@@ -779,6 +835,17 @@ a {
   border: 3px solid #eeeeee;
   background-color: #eeeeee;
   border-radius: 3px;
+}
+
+.page__item:hover {
+  background-color: #BFBFBF;
+  border-color: #BFBFBF;
+}
+
+.page__item:active {
+  background-color: #D5D5D5;
+  border: none;
+  border-top: 3px solid #BFBFBF;
 }
 
 .page__item:last-child {
@@ -963,7 +1030,9 @@ input[type="checkbox"]:checked + .filter__label::before {
   align-items: center;
   justify-content: center;
 
+  outline: none;
   border: none;
+  border-radius: 3px;
   background-color: #eeeeee;
 
   font-size: 16px;
@@ -975,4 +1044,10 @@ input[type="checkbox"]:checked + .filter__label::before {
 
 .filter__submit:hover {
   cursor: pointer;
+  background-color: #DFDFDF;
+}
+
+.filter__submit:active {
+  border-top: 3px solid #BFBFBF;
+  background-color: #D5D5D5;
 }
