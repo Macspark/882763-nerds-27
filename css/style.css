@@ -1030,14 +1030,14 @@ a {
 }
 
 .filter__bar {
-  width: 219px;
+  width: 220px;
   height: 2px;
   background-color: #d7dcde;
 }
 
 .filter__bar--fill {
   height: 100%;
-  width: 152px;
+  width: 160px;
   background-color: green;
 
   display: flex;
@@ -1089,8 +1089,6 @@ a {
   margin-right: 0;
 }
 
-/* w */
-
 .filter__label:hover {
   cursor: pointer;
   color: #000000;
@@ -1099,8 +1097,6 @@ a {
 .filter__label:hover.filter__label::before {
   opacity: 1;
 }
-
-/* w */
 
 input[type="radio"] + .filter__label::before {
   content: "";
