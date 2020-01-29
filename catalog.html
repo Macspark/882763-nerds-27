@@ -13,10 +13,13 @@
   <header class="header">
     <div class="container">
 
-      <nav class="header__nav">
-        <a class="header__logo" href="index.html">
+      <div class="header__logo" href="index.html">
+        <a href="index.html">
           <img src="./img/nerds-logo.svg" width="160" height="65" alt="Лого студии Nёrds">
         </a>
+      </div>
+
+      <nav>
         <ul class="header__main-menu">
           <li>
             <a class="header__item" href="#">СТУДИЯ</a>
@@ -25,16 +28,17 @@
             <a class="header__item" href="#">КЛИЕНТЫ</a>
           </li>
           <li>
-            <a class="header__item header__item--active" href="catalog.html">МАГАЗИН</a>
+            <a class="header__item header__item--current" href="catalog.html">МАГАЗИН</a>
           </li>
           <li>
             <a class="header__item" href="#">КОНТАКТЫ</a>
           </li>
         </ul>
-        <a class="header__item header__cart" href="#">
-          <img src="./img/buy-cart-icon.svg" width="15" height="15" alt=""> КОРЗИНА
-        </a>
       </nav>
+
+      <a class="header__item" href="#">
+        <img class="header__cart" src="./img/buy-cart-icon.svg" width="15" height="15" alt=""> КОРЗИНА
+      </a>
 
     </div>
   </header>
