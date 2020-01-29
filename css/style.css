@@ -320,7 +320,7 @@ a {
 /* О НАС */
 
 .company {
-  margin-bottom: 45px;
+  margin-bottom: 47px;
   display: flex;
   justify-content: space-between;
 }
@@ -390,6 +390,8 @@ a {
   justify-content: space-around;
   flex-wrap: wrap;
   text-align: left;
+
+  width: 360px;
 
   list-style: none;
   padding: 0;
@@ -490,11 +492,11 @@ a {
 
 .contact__address {
   z-index: 1;
-  padding: 51px;
+  padding: 47px 50px;
 
   box-sizing: border-box;
   width: 319px;
-  height: 308px;
+  min-height: 308px;
   background-color: #ffffff;
 }
 
@@ -504,13 +506,15 @@ a {
   line-height: 1.67;
   color: #000000;
 
-  margin: 0 0 24px;
+  margin: 2px 0 23px;
 }
 
 .contact__text {
   line-height: 1.13;
   max-width: 210px;
   color: #666666;
+
+  margin: 0 0 18px;
 }
 
 .contact__button {
