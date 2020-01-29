@@ -941,6 +941,7 @@ a {
   display: flex;
   list-style: none;
   padding: 0;
+  margin-bottom: 14px;
 }
 
 .page__item {
