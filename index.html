@@ -35,7 +35,7 @@
       </nav>
 
       <a class="header__item" href="#">
-        <img class="header__cart" src="./img/buy-cart-icon.svg" width="15" height="15" alt=""> КОРЗИНА
+        <img src="./img/buy-cart-icon.svg" width="15" height="15" alt=""> КОРЗИНА
       </a>
 
     </div>
@@ -163,92 +163,61 @@
 
       </div>
 
-      <ul class="partners container">
-
-        <li class="partners__item">
-          <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
-            <img src="./img/htmlacademy-logo.png" width="199" height="68" alt="HTML Academy">
-          </a>
-        </li>
-
-        <li class="partners__item">
-          <a href="#">
-            <img src="./img/borodinski-logo.png" width="209" height="90" alt="Borodinski">
-          </a>
-        </li>
-
-        <li class="partners__item">
-          <a href="#">
-            <img src="./img/pink-logo.png" width="185" height="52" alt="Pink">
-          </a>
-        </li>
-
-        <li class="partners__item">
-          <a href="#">
-            <img src="./img/mishka-logo.png" width="173" height="84" alt="Mishka">
-          </a>
-        </li>
-
-      </ul>
-
-  </main>
-
-  <footer>
-
-    <div class="contact">
-      <div class="contact__map">
-        <script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4672eb6ed94486c0b3e68717154059112245058259ccdb3f5ac2bf1a8c8f5191&amp;width=100%25&amp;height=416&amp;lang=ru_RU&amp;scroll=true">
-        </script>
-      </div>
 
       <div class="container">
-        <div class="contact__address">
-          <p class="contact__title">
-            NЁRDS DESIGN STUDIO
-          </p>
-          <p class="contact__text">
-            191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-          </p>
-          <p class="contact__text">
-            тел. +7 (812) 275-75-75
-          </p>
-          <a class="contact__button">НАПИШИТЕ НАМ</a>
-        </div>
+        <ul class="partners">
+
+          <li>
+            <a class="partners__item" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
+              <img src="./img/htmlacademy-logo.png" width="199" height="68" alt="HTML Academy">
+            </a>
+          </li>
+
+          <li>
+            <a class="partners__item" href="#">
+              <img src="./img/borodinski-logo.png" width="209" height="90" alt="Borodinski">
+            </a>
+          </li>
+
+          <li>
+            <a class="partners__item" href="#">
+              <img src="./img/pink-logo.png" width="185" height="52" alt="Pink">
+            </a>
+          </li>
+
+          <li>
+            <a class="partners__item" href="#">
+              <img src="./img/mishka-logo.png" width="173" height="84" alt="Mishka">
+            </a>
+          </li>
+
+        </ul>
+      </div>
+  </main>
+
+  <div class="contact">
+    <div class="contact__map">
+      <script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4672eb6ed94486c0b3e68717154059112245058259ccdb3f5ac2bf1a8c8f5191&amp;width=100%25&amp;height=416&amp;lang=ru_RU&amp;scroll=true">
+      </script>
+    </div>
+
+    <div class="container">
+      <div class="contact__address">
+        <p class="contact__title">
+          NЁRDS DESIGN STUDIO
+        </p>
+        <p class="contact__text">
+          191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+        </p>
+        <p class="contact__text">
+          тел. +7 (812) 275-75-75
+        </p>
+        <a class="contact__button">НАПИШИТЕ НАМ</a>
       </div>
     </div>
+  </div>
 
-    <div class="modal">
-      <p class="modal__title">Напишите нам</p>
-
-      <button type="button" class="modal__close">
-        <img src="./img/close-cross.svg" width="21" height="21" alt="Закрыть">
-      </button>
-
-      <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
-
-        <div class="modal__field">
-
-          <div>
-            <label>Ваше имя:</label>
-            <input type="text" class="modal__input" name="name" placeholder="Имя Фамилия" required>
-          </div>
-
-          <div>
-            <label>Ваш e-mail:</label>
-            <input type="email" class="modal__input" name="email" placeholder="email@example.com" required>
-          </div>
-
-          <div>
-            <label>Текст письма:</label>
-            <textarea name="message" class="modal__input" placeholder="В свободной форме" required></textarea>
-          </div>
-
-        </div>
-
-        <input type="submit" value="ОТПРАВИТЬ" class="modal__button">
-
-      </form>
-    </div>
+  <footer>
 
     <div class="social">
       <div class="container">
@@ -282,6 +251,39 @@
     </div>
 
   </footer>
+
+  <div class="modal">
+    <p class="modal__title">Напишите нам</p>
+
+    <button type="button" class="modal__close">
+      <img src="./img/close-cross.svg" width="21" height="21" alt="Закрыть">
+    </button>
+
+    <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
+
+      <div class="modal__field">
+
+        <div>
+          <label>Ваше имя:</label>
+          <input type="text" class="modal__input" name="name" placeholder="Имя Фамилия" required>
+        </div>
+
+        <div>
+          <label>Ваш e-mail:</label>
+          <input type="email" class="modal__input" name="email" placeholder="email@example.com" required>
+        </div>
+
+        <div>
+          <label>Текст письма:</label>
+          <textarea name="message" class="modal__input" placeholder="В свободной форме" required></textarea>
+        </div>
+
+      </div>
+
+      <input type="submit" value="ОТПРАВИТЬ" class="modal__button">
+
+    </form>
+  </div>
 
   <script src="./js/script.js"></script>
 </body>

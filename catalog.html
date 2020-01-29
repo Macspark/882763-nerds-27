@@ -67,9 +67,9 @@
 
             <div class="filter__range">
               <label for="filter__range-min">ОТ</label>
-              <input type="text" class="filter__input" id="filter__range-min" name="min-range" value="0">
+              <input type="text" id="filter__range-min" name="min-range" value="0">
               <label for="filter__range-max">ДО</label>
-              <input type="text" class="filter__input" id="filter__range-max" name="max-range" value="15 000">
+              <input type="text" id="filter__range-max" name="max-range" value="15 000">
             </div>
 
           </fieldset>
@@ -78,15 +78,15 @@
             <legend class="filter__title">СЕТКА:</legend>
             <ul>
               <li>
-                <input type="radio" class="filter__input" name="grid" value="adaptive" id="filter__adaptive" checked>
+                <input type="radio" class="filter__radio" name="grid" value="adaptive" id="filter__adaptive" checked>
                 <label class="filter__label" for="filter__adaptive">Адаптивная</label>
               </li>
               <li>
-                <input type="radio" class="filter__input" name="grid" value="fixed" id="filter__fixed">
+                <input type="radio" class="filter__radio" name="grid" value="fixed" id="filter__fixed">
                 <label class="filter__label" for="filter__fixed">Фиксированная</label>
               </li>
               <li>
-                <input type="radio" class="filter__input" name="grid" value="rubber" id="filter__rubber">
+                <input type="radio" class="filter__radio" name="grid" value="rubber" id="filter__rubber">
                 <label class="filter__label" for="filter__rubber">Резиновая</label>
               </li>
             </ul>
@@ -96,23 +96,23 @@
             <legend class="filter__title">ОСОБЕННОСТИ:</legend>
             <ul>
               <li>
-                <input type="checkbox" class="filter__input" name="special" value="slider" id="filter__slider" checked>
+                <input type="checkbox" class="filter__checkbox" name="special" value="slider" id="filter__slider" checked>
                 <label class="filter__label" for="filter__slider">Слайдер</label>
               </li>
               <li>
-                <input type="checkbox" class="filter__input" name="special" value="advantages" id="filter__advantages">
+                <input type="checkbox" class="filter__checkbox" name="special" value="advantages" id="filter__advantages" disabled>
                 <label class="filter__label" for="filter__advantages">Блок преимуществ</label>
               </li>
               <li>
-                <input type="checkbox" class="filter__input" name="special" value="news" id="filter__news" checked>
+                <input type="checkbox" class="filter__checkbox" name="special" value="news" id="filter__news" checked>
                 <label class="filter__label" for="filter__news">Новости</label>
               </li>
               <li>
-                <input type="checkbox" class="filter__input" name="special" value="gallery" id="filter__gallery">
+                <input type="checkbox" class="filter__checkbox" name="special" value="gallery" id="filter__gallery">
                 <label class="filter__label" for="filter__gallery">Галерея</label>
               </li>
               <li>
-                <input type="checkbox" class="filter__input" name="special" value="cart" id="filter__cart">
+                <input type="checkbox" class="filter__checkbox" name="special" value="cart" id="filter__cart">
                 <label class="filter__label" for="filter__cart">Корзина</label>
               </li>
             </ul>
@@ -126,7 +126,7 @@
 
         <div class="sorting">
           <p class="sorting__title">СОРТИРОВАТЬ:</p>
-          <div class="sorting__by">
+          <div class="sorting__wrapper">
 
             <ul class="sorting__parameters">
               <li>
@@ -163,11 +163,11 @@
               <img src="img/catalog/sedona.jpg" width="360" height="576" alt="Седона">
             </div>
             <div class="product__desc">
-              <a class="product__button" href="">9 900 РУБ.</a>
+              <a class="product__button" href="#">9 900 РУБ.</a>
               <p class="product__text">
                 Информационный сайт для&nbsp;туристов
               </p>
-              <h3 class="product__title"><a href="">SEDONA</a></h3>
+              <h3 class="product__title"><a href="#">SEDONA</a></h3>
             </div>
           </li>
 
@@ -176,11 +176,11 @@
               <img src="img/catalog/pinkapp.jpg" width="360" height="576" alt="Pink App">
             </div>
             <div class="product__desc">
-              <a class="product__button" href="">9 900 РУБ.</a>
+              <a class="product__button" href="#">9 900 РУБ.</a>
               <p class="product__text">
                 Продуктовый лендинг приложения для iOS и Android
               </p>
-              <h3 class="product__title"><a href="">PINK APP</a></h3>
+              <h3 class="product__title"><a href="#">PINK APP</a></h3>
             </div>
           </li>
 
@@ -189,11 +189,11 @@
               <img src="img/catalog/barbershop.jpg" width="360" height="576" alt="Barbershop">
             </div>
             <div class="product__desc">
-              <a class="product__button" href="">9 900 РУБ.</a>
+              <a class="product__button" href="#">9 900 РУБ.</a>
               <p class="product__text">
                 Сайт салона красоты. Для&nbsp;мужчин, да.
               </p>
-              <h3 class="product__title"><a href="">BARBERSHOP</a></h3>
+              <h3 class="product__title"><a href="#">BARBERSHOP</a></h3>
             </div>
           </li>
 
@@ -202,11 +202,11 @@
               <img src="img/catalog/mishka.jpg" width="360" height="576" alt="Mishka">
             </div>
             <div class="product__desc">
-              <a class="product__button" href="">9 900 РУБ.</a>
+              <a class="product__button" href="#">9 900 РУБ.</a>
               <p class="product__text">
                 Интернет-магазин вязаных&nbsp;игрушек
               </p>
-              <h3 class="product__title"><a href="">MISHKA</a></h3>
+              <h3 class="product__title"><a href="#">MISHKA</a></h3>
             </div>
           </li>
 
@@ -215,11 +215,11 @@
               <img src="img/catalog/aplus.jpg" width="360" height="576" alt="A Plus">
             </div>
             <div class="product__desc">
-              <a class="product__button" href="">9 900 РУБ.</a>
+              <a class="product__button" href="#">9 900 РУБ.</a>
               <p class="product__text">
                 Лендинг курсов повышения квалификации
               </p>
-              <h3 class="product__title"><a href="">A PLUS</a></h3>
+              <h3 class="product__title"><a href="#">A PLUS</a></h3>
             </div>
           </li>
 
@@ -228,11 +228,11 @@
               <img src="img/catalog/kvast.jpg" width="360" height="576" alt="Кваст">
             </div>
             <div class="product__desc">
-              <a class="product__button" href="">9 900 РУБ.</a>
+              <a class="product__button" href="#">9 900 РУБ.</a>
               <p class="product__text">
                 Промо-сайт производителя крафтового кваса
               </p>
-              <h3 class="product__title"><a href="">КВАСТ</a></h3>
+              <h3 class="product__title"><a href="#">КВАСТ</a></h3>
             </div>
           </li>
 
@@ -258,62 +258,29 @@
 
   </main>
 
+  <div class="contact">
+    <div class="contact__map">
+      <script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4672eb6ed94486c0b3e68717154059112245058259ccdb3f5ac2bf1a8c8f5191&amp;width=100%25&amp;height=416&amp;lang=ru_RU&amp;scroll=true">
+      </script>
+    </div>
+
+    <div class="container">
+      <div class="contact__address">
+        <p class="contact__title">
+          NЁRDS DESIGN STUDIO
+        </p>
+        <p class="contact__text">
+          191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+        </p>
+        <p class="contact__text">
+          тел. +7 (812) 275-75-75
+        </p>
+        <a class="contact__button">НАПИШИТЕ НАМ</a>
+      </div>
+    </div>
+  </div>
+
   <footer>
-
-    <div class="contact">
-      <div class="contact__map">
-        <script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4672eb6ed94486c0b3e68717154059112245058259ccdb3f5ac2bf1a8c8f5191&amp;width=100%25&amp;height=416&amp;lang=ru_RU&amp;scroll=true">
-        </script>
-      </div>
-
-      <div class="container">
-        <div class="contact__address">
-          <p class="contact__title">
-            NЁRDS DESIGN STUDIO
-          </p>
-          <p class="contact__text">
-            191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-          </p>
-          <p class="contact__text">
-            тел. +7 (812) 275-75-75
-          </p>
-          <a class="contact__button">НАПИШИТЕ НАМ</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal">
-      <p class="modal__title">Напишите нам</p>
-
-      <button type="button" class="modal__close">
-        <img src="./img/close-cross.svg" width="21" height="21" alt="Закрыть">
-      </button>
-
-      <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
-
-        <div class="modal__field">
-
-          <div>
-            <label>Ваше имя:</label>
-            <input type="text" class="modal__input" name="name" placeholder="Имя Фамилия" required>
-          </div>
-
-          <div>
-            <label>Ваш e-mail:</label>
-            <input type="email" class="modal__input" name="email" placeholder="email@example.com" required>
-          </div>
-
-          <div>
-            <label>Текст письма:</label>
-            <textarea name="message" class="modal__input" placeholder="В свободной форме" required></textarea>
-          </div>
-
-        </div>
-
-        <input type="submit" value="ОТПРАВИТЬ" class="modal__button">
-
-      </form>
-    </div>
 
     <div class="social">
       <div class="container">
@@ -347,6 +314,39 @@
     </div>
 
   </footer>
+
+  <div class="modal">
+    <p class="modal__title">Напишите нам</p>
+
+    <button type="button" class="modal__close">
+      <img src="./img/close-cross.svg" width="21" height="21" alt="Закрыть">
+    </button>
+
+    <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
+
+      <div class="modal__field">
+
+        <div>
+          <label>Ваше имя:</label>
+          <input type="text" class="modal__input" name="name" placeholder="Имя Фамилия" required>
+        </div>
+
+        <div>
+          <label>Ваш e-mail:</label>
+          <input type="email" class="modal__input" name="email" placeholder="email@example.com" required>
+        </div>
+
+        <div>
+          <label>Текст письма:</label>
+          <textarea name="message" class="modal__input" placeholder="В свободной форме" required></textarea>
+        </div>
+
+      </div>
+
+      <input type="submit" value="ОТПРАВИТЬ" class="modal__button">
+
+    </form>
+  </div>
 
   <script src="./js/script.js"></script>
 </body>
