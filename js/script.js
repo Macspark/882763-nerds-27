@@ -1,7 +1,7 @@
 let modalWindow = document.querySelector('.modal');
 let modalButton = document.querySelector('.contact__button');
 let modalButton2 = document.querySelector('.modal__close');
-let modalActive= 'modal--active';
+const modalActive= 'modal--active';
 
 let slideBtn1 = document.querySelector('.slider__switcher1');
 let slideBtn2 = document.querySelector('.slider__switcher2');
@@ -9,8 +9,8 @@ let slideBtn3 = document.querySelector('.slider__switcher3');
 let slide1 = document.querySelector('.slider__slide1');
 let slide2 = document.querySelector('.slider__slide2');
 let slide3 = document.querySelector('.slider__slide3');
-let slideBtnActive = 'slider__switcher--active';
-let slideActive = 'slider__slide--active';
+const slideBtnActive = 'slider__switcher--active';
+const slideActive = 'slider__slide--active';
 
 
 modalButton.addEventListener('click', function() {
