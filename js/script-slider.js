@@ -1,25 +1,11 @@
-let modalWindow = document.querySelector('.modal');
-let modalButton = document.querySelector('.contact__button');
-let modalButton2 = document.querySelector('.modal__close');
-const modalActive= 'modal--active';
-
-let slideBtn1 = document.querySelector('.slider__switcher1');
-let slideBtn2 = document.querySelector('.slider__switcher2');
-let slideBtn3 = document.querySelector('.slider__switcher3');
-let slide1 = document.querySelector('.slider__slide1');
-let slide2 = document.querySelector('.slider__slide2');
-let slide3 = document.querySelector('.slider__slide3');
+const slideBtn1 = document.querySelector('.slider__switcher1');
+const slideBtn2 = document.querySelector('.slider__switcher2');
+const slideBtn3 = document.querySelector('.slider__switcher3');
+const slide1 = document.querySelector('.slider__slide1');
+const slide2 = document.querySelector('.slider__slide2');
+const slide3 = document.querySelector('.slider__slide3');
 const slideBtnActive = 'slider__switcher--active';
 const slideActive = 'slider__slide--active';
-
-
-modalButton.addEventListener('click', function() {
-  modalWindow.classList.add(modalActive);
-});
-
-modalButton2.addEventListener('click', function() {
-  modalWindow.classList.remove(modalActive);
-});
 
 slideBtn1.addEventListener('click', function() {
   slide1.classList.add(slideActive);

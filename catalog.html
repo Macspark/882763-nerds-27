@@ -66,10 +66,14 @@
             </div>
 
             <div class="filter__range">
-              <label for="filter__range-min">ОТ</label>
-              <input type="text" id="filter__range-min" name="min-range" value="0">
-              <label for="filter__range-max">ДО</label>
-              <input type="text" id="filter__range-max" name="max-range" value="15 000">
+              <div class=filter__range-block>
+                <label for="filter__range-min">ОТ</label>
+                <input type="text" id="filter__range-min" name="min-range" value="0">
+              </div>
+              <div class=filter__range-block>
+                <label for="filter__range-max">ДО</label>
+                <input type="text" id="filter__range-max" name="max-range" value="15 000">
+              </div>
             </div>
 
           </fieldset>
@@ -118,7 +122,7 @@
             </ul>
           </fieldset>
 
-          <input class="filter__submit" type="submit" value="ПОКАЗАТЬ">
+          <button class="filter__submit" type="submit">ПОКАЗАТЬ</button>
 
         </form>
       </div>
@@ -348,7 +352,7 @@
     </form>
   </div>
 
-  <script src="./js/script.js"></script>
+  <script src="./js/script-modal.js"></script>
 </body>
 
 </html>

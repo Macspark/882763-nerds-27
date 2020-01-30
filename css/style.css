@@ -1104,8 +1104,17 @@ a {
 
 .filter__range {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
   margin-bottom: 25px;
+}
+
+.filter__range-block {
+  display: flex;
+  align-items: center;
+}
+
+.filter__range-block:last-child {
+  margin-right: 0;
 }
 
 .filter__range label {
@@ -1125,12 +1134,6 @@ a {
   line-height: 1.38;
   text-align: center;
   color: #283136;
-
-  margin-right: 35px;
-}
-
-.filter__range input:last-child {
-  margin-right: 0;
 }
 
 input:not(:disabled) + .filter__label:hover {
