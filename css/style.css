@@ -929,8 +929,7 @@ a {
   background-color: #eeeeee;
 }
 
-.product__item:hover .product__desc,
-.product__item:focus .product__desc {
+.product__item:hover .product__desc {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
