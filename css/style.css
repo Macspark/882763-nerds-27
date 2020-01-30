@@ -587,7 +587,8 @@ a {
   outline: none;
 }
 
-.modal__close:hover {
+.modal__close:hover,
+.modal__close:focus {
   cursor: pointer;
   opacity: 1;
 }
@@ -1197,6 +1198,11 @@ input:disabled + .filter__label {
 }
 
 .filter__submit:hover {
+  cursor: pointer;
+  background-color: #dfdfdf;
+}
+
+.filter__submit:focus {
   cursor: pointer;
   background-color: #dfdfdf;
 }
