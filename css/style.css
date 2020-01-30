@@ -78,9 +78,11 @@ a {
 .header__item {
   position: relative;
   font-weight: 500;
+  outline: none;
 }
 
-.header__item:hover {
+.header__item:hover,
+.header__item:focus {
   color: #fb565a;
 }
 
@@ -183,7 +185,8 @@ a {
   background-color: #e74246;
 }
 
-.slider__button:active {
+.slider__button:active,
+.slider__button:focus {
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
   background-color: #d7373b;
   color: rgba(255, 255, 255, 0.3);
@@ -209,6 +212,10 @@ a {
   border-radius: 50%;
   background-color: #ffffff;
   outline: none;
+}
+
+.slider__switcher:focus {
+  outline: 5px auto -webkit-focus-ring-color;
 }
 
 .slider__switcher--active::after {
@@ -283,7 +290,8 @@ a {
   background-color: #e74246;
 }
 
-.features__button--red:active {
+.features__button--red:active,
+.features__button--red:focus {
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
   background-color: #d7373b;
   color: rgba(255, 255, 255, 0.3);
@@ -297,7 +305,8 @@ a {
   background-color: #00bc6c;
 }
 
-.features__button--green:active {
+.features__button--green:active,
+.features__button--green:focus {
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
   background-color: #00aa62;
   color: rgba(255, 255, 255, 0.3);
@@ -311,7 +320,8 @@ a {
   background-color: #eab534;
 }
 
-.features__button--yellow:active {
+.features__button--yellow:active,
+.features__button--yellow:focus {
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
   background-color: #e5a722;
   color: rgba(255, 255, 255, 0.3);
@@ -440,13 +450,15 @@ a {
   height: 180px;
   display: flex;
   align-items: center;
+  outline: none;
 }
 
 .partners__item:nth-child(4n) {
   margin-right: 0;
 }
 
-.partners__item:hover {
+.partners__item:hover,
+.partners__item:focus {
   opacity: 1;
 }
 
@@ -543,7 +555,8 @@ a {
   background-color: #e74246;
 }
 
-.contact__button:active {
+.contact__button:active,
+.contact__button:focus {
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
   background-color: #d7373b;
   color: rgba(255, 255, 255, 0.3);
@@ -587,10 +600,14 @@ a {
   outline: none;
 }
 
-.modal__close:hover,
-.modal__close:focus {
+.modal__close:hover, {
   cursor: pointer;
   opacity: 1;
+}
+
+.modal__close:focus {
+  opacity: 1;
+  outline: 5px auto -webkit-focus-ring-color;
 }
 
 .modal__close:active {
@@ -686,7 +703,8 @@ a {
   background-color: #e74246;
 }
 
-.modal__button:active {
+.modal__button:active,
+.modal__button:focus {
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
   background-color: #d7373b;
   color: rgba(255, 255, 255, 0.3);
@@ -722,7 +740,8 @@ a {
   background-color: #e74246;
 }
 
-.social__button:active {
+.social__button:active,
+.social__button:focus {
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
   background-color: #d7373b;
 }
@@ -910,7 +929,8 @@ a {
   background-color: #eeeeee;
 }
 
-.product__item:hover .product__desc {
+.product__item:hover .product__desc,
+.product__item:focus .product__desc {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
