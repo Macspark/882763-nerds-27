@@ -501,8 +501,13 @@ a {
 /* карта */
 
 .contact {
-  min-width: 1160px;
+  min-width: 1440px;
   position: relative;
+
+  background: url("../img/map-marker.png") no-repeat 908px 50%,
+              url("../img/map.jpg");
+  background-size: 231px 190px, cover;
+  background-repeat: no-repeat;
 }
 
 .contact__map {

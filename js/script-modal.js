@@ -4,6 +4,7 @@ const modalButton2 = document.querySelector('.modal__close');
 const modalActive= 'modal--active';
 
 modalButton.addEventListener('click', function() {
+  event.preventDefault()
   modalWindow.classList.add(modalActive);
 });
 
