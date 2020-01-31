@@ -69,6 +69,7 @@ a {
 
 .header__logo:hover a {
   opacity: 0.8;
+  transition: all 200ms ease-out 0s;
 }
 
 .header__logo:active a {
@@ -84,6 +85,7 @@ a {
 .header__item:hover,
 .header__item:focus {
   color: #fb565a;
+  transition: all 200ms ease-out 0s;
 }
 
 .header__item:active {
@@ -183,6 +185,7 @@ a {
 
 .slider__button:hover {
   background-color: #e74246;
+  transition: all 500ms ease-out 0s;
 }
 
 .slider__button:active,
@@ -288,6 +291,7 @@ a {
 
 .features__button--red:hover {
   background-color: #e74246;
+  transition: all 500ms ease-out 0s;
 }
 
 .features__button--red:active,
@@ -303,6 +307,7 @@ a {
 
 .features__button--green:hover {
   background-color: #00bc6c;
+  transition: all 500ms ease-out 0s;
 }
 
 .features__button--green:active,
@@ -318,6 +323,7 @@ a {
 
 .features__button--yellow:hover {
   background-color: #eab534;
+  transition: all 500ms ease-out 0s;
 }
 
 .features__button--yellow:active,
@@ -460,6 +466,7 @@ a {
 .partners__item:hover,
 .partners__item:focus {
   opacity: 1;
+  transition: all 500ms ease-out 0s;
 }
 
 .partners__item:active {
@@ -553,6 +560,7 @@ a {
 
 .contact__button:hover {
   background-color: #e74246;
+  transition: all 500ms ease-out 0s;
 }
 
 .contact__button:active,
@@ -603,6 +611,7 @@ a {
 .modal__close:hover, {
   cursor: pointer;
   opacity: 1;
+  transition: all 500ms ease-out 0s;
 }
 
 .modal__close:focus {
@@ -666,6 +675,7 @@ a {
 
 .modal__field .modal__input:hover {
   border: 2px solid #b4b9bb;
+  transition: all 500ms ease-out 0s;
 }
 
 .modal__field .modal__input:focus {
@@ -701,6 +711,7 @@ a {
 
 .modal__button:hover {
   background-color: #e74246;
+  transition: all 500ms ease-out 0s;
 }
 
 .modal__button:active,
@@ -737,6 +748,7 @@ a {
 }
 
 .social__button:hover {
+  transition: all 200ms ease-out 0s;
   background-color: #e74246;
 }
 
@@ -908,6 +920,7 @@ a {
 
 .product__item:hover::before {
   opacity: 1;
+  transition: all 200ms ease-out 0s;
 }
 
 .product__img {
@@ -943,6 +956,7 @@ a {
 
 .product__title:hover a {
   color: #fb565a;
+  transition: all 200ms ease-out 0s;
 }
 
 .product__title:active a {
@@ -973,6 +987,7 @@ a {
 
 .product__button:hover {
   background-color: #e74246;
+  transition: all 500ms ease-out 0s;
 }
 
 .product__button:active {
@@ -1013,6 +1028,7 @@ a {
 .page__item:hover {
   background-color: #dfdfdf;
   border-color: #dfdfdf;
+  transition: all 500ms ease-out 0s;
 }
 
 .page__item:active {
@@ -1159,10 +1175,12 @@ a {
 input:not(:disabled) + .filter__label:hover {
   cursor: pointer;
   color: #000000;
+  transition: all 200ms ease-out 0s;
 }
 
 input:not(:disabled) + .filter__label:hover.filter__label::before {
   opacity: 1;
+  transition: all 200ms ease-out 0s;
 }
 
 .filter__radio + .filter__label::before {
@@ -1219,6 +1237,7 @@ input:disabled + .filter__label {
 .filter__submit:hover {
   cursor: pointer;
   background-color: #dfdfdf;
+  transition: all 500ms ease-out 0s;
 }
 
 .filter__submit:focus {
