@@ -3,7 +3,7 @@ const modalOpenBtn = document.querySelector('.contact__button');
 const modalCloseBtn = document.querySelector('.modal__close');
 const modalActive = 'modal--active';
 
-modalOpenBtn.addEventListener('click', function() {
+modalOpenBtn.addEventListener('click', function(event) {
   event.preventDefault()
   modalWindow.classList.add(modalActive);
 });

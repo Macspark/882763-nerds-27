@@ -444,7 +444,6 @@ a {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
 
   list-style: none;
   padding: 0;
@@ -457,10 +456,6 @@ a {
   display: flex;
   align-items: center;
   outline: none;
-}
-
-.partners__item:nth-child(4n) {
-  margin-right: 0;
 }
 
 .partners__item:hover,
@@ -481,6 +476,11 @@ a {
   justify-content: center;
 
   width: 260px;
+  margin-right: 40px;
+}
+
+.partners li:nth-child(4n) {
+  margin-right: 0;
 }
 
 .partners li::after {
