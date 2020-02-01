@@ -14,7 +14,7 @@
     <div class="container">
 
       <div class="header__logo">
-        <a href="index.html">
+        <a href="index.html" aria-label="Главная страница">
           <img src="./img/nerds-logo.svg" width="160" height="65" alt="Лого студии Nёrds">
         </a>
       </div>
@@ -22,22 +22,22 @@
       <nav>
         <ul class="header__main-menu">
           <li>
-            <a class="header__item" href="#">СТУДИЯ</a>
+            <a class="header__item" href="#" aria-label="Студия">СТУДИЯ</a>
           </li>
           <li>
-            <a class="header__item" href="#">КЛИЕНТЫ</a>
+            <a class="header__item" href="#" aria-label="Клиенты">КЛИЕНТЫ</a>
           </li>
           <li>
-            <a class="header__item header__item--current" href="catalog.html">МАГАЗИН</a>
+            <a class="header__item header__item--current" href="catalog.html" aria-label="Магазин">МАГАЗИН</a>
           </li>
           <li>
-            <a class="header__item" href="#">КОНТАКТЫ</a>
+            <a class="header__item" href="#" aria-label="Контакты">КОНТАКТЫ</a>
           </li>
         </ul>
       </nav>
 
       <a class="header__item" href="#">
-        <img class="header__cart" src="./img/buy-cart-icon.svg" width="15" height="15" alt=""> КОРЗИНА
+        <img src="./img/buy-cart-icon.svg" width="15" height="15" alt="" aria-label="Корзина"> КОРЗИНА
       </a>
 
     </div>
@@ -59,20 +59,20 @@
             <div class="filter__slider">
               <div class="filter__bar">
                 <div class="filter__bar-fill">
-                  <button class="filter__button" type="button"></button>
-                  <button class="filter__button" type="button"></button>
+                  <button class="filter__button" type="button" aria-label="Минимальная стоимость"></button>
+                  <button class="filter__button" type="button" aria-label="Максимальная стоимость"></button>
                 </div>
               </div>
             </div>
 
             <div class="filter__range">
-              <div class=filter__range-block>
+              <div class="filter__range-block">
                 <label for="filter__range-min">ОТ</label>
-                <input type="text" id="filter__range-min" name="min-range" value="0">
+                <input type="text" id="filter__range-min" name="min-range" value="0" aria-label="Минимальная стоимость">
               </div>
-              <div class=filter__range-block>
+              <div class="filter__range-block">
                 <label for="filter__range-max">ДО</label>
-                <input type="text" id="filter__range-max" name="max-range" value="15 000">
+                <input type="text" id="filter__range-max" name="max-range" value="15 000" aria-label="Максимальная стоимость">
               </div>
             </div>
 
@@ -82,15 +82,15 @@
             <legend class="filter__title">СЕТКА:</legend>
             <ul>
               <li>
-                <input type="radio" class="filter__radio" name="grid" value="adaptive" id="filter__adaptive" checked>
+                <input type="radio" class="filter__radio" name="grid" value="adaptive" id="filter__adaptive" aria-label="Адаптивная сетка" checked>
                 <label class="filter__label" for="filter__adaptive">Адаптивная</label>
               </li>
               <li>
-                <input type="radio" class="filter__radio" name="grid" value="fixed" id="filter__fixed">
+                <input type="radio" class="filter__radio" name="grid" value="fixed" id="filter__fixed" aria-label="Фиксированная сетка">
                 <label class="filter__label" for="filter__fixed">Фиксированная</label>
               </li>
               <li>
-                <input type="radio" class="filter__radio" name="grid" value="rubber" id="filter__rubber">
+                <input type="radio" class="filter__radio" name="grid" value="rubber" id="filter__rubber" aria-label="Резиновая сетка">
                 <label class="filter__label" for="filter__rubber">Резиновая</label>
               </li>
             </ul>
@@ -100,29 +100,29 @@
             <legend class="filter__title">ОСОБЕННОСТИ:</legend>
             <ul>
               <li>
-                <input type="checkbox" class="filter__checkbox" name="special" value="slider" id="filter__slider" checked>
+                <input type="checkbox" class="filter__checkbox" name="special" value="slider" id="filter__slider"  aria-label="Слайдер" checked>
                 <label class="filter__label" for="filter__slider">Слайдер</label>
               </li>
               <li>
-                <input type="checkbox" class="filter__checkbox" name="special" value="advantages" id="filter__advantages" disabled>
+                <input type="checkbox" class="filter__checkbox" name="special" value="advantages" id="filter__advantages" aria-label="Блок преимуществ">
                 <label class="filter__label" for="filter__advantages">Блок преимуществ</label>
               </li>
               <li>
-                <input type="checkbox" class="filter__checkbox" name="special" value="news" id="filter__news" checked>
+                <input type="checkbox" class="filter__checkbox" name="special" value="news" id="filter__news" aria-label="Новости" checked>
                 <label class="filter__label" for="filter__news">Новости</label>
               </li>
               <li>
-                <input type="checkbox" class="filter__checkbox" name="special" value="gallery" id="filter__gallery">
+                <input type="checkbox" class="filter__checkbox" name="special" value="gallery" id="filter__gallery" aria-label="Галерея">
                 <label class="filter__label" for="filter__gallery">Галерея</label>
               </li>
               <li>
-                <input type="checkbox" class="filter__checkbox" name="special" value="cart" id="filter__cart">
+                <input type="checkbox" class="filter__checkbox" name="special" value="cart" id="filter__cart" aria-label="Корзина">
                 <label class="filter__label" for="filter__cart">Корзина</label>
               </li>
             </ul>
           </fieldset>
 
-          <button class="filter__submit" type="submit">ПОКАЗАТЬ</button>
+          <button class="filter__submit" type="submit" aria-label="Показать">ПОКАЗАТЬ</button>
 
         </form>
       </div>
@@ -134,24 +134,24 @@
 
             <ul class="sorting__parameters">
               <li>
-                <a class="sorting__item sorting__item--active" href="#">ПО ЦЕНЕ</a>
+                <a class="sorting__item sorting__item--active" href="#" aria-label="Сортировать по цене">ПО ЦЕНЕ</a>
               </li>
               <li>
-                <a class="sorting__item" href="#">ПО ТИПУ</a>
+                <a class="sorting__item" href="#" aria-label="Сортировать по типу">ПО ТИПУ</a>
               </li>
               <li>
-                <a class="sorting__item" href="#">ПО НАЗВАНИЮ</a>
+                <a class="sorting__item" href="#" aria-label="Сортировать по названию">ПО НАЗВАНИЮ</a>
               </li>
             </ul>
 
             <ul class="sorting__arrows">
               <li>
-                <a class="sorting__item sorting__item--active" href="#">
+                <a class="sorting__item sorting__item--active" href="#" aria-label="Сортировать по убыванию">
                   <img src="img/arrow-up.svg" class="sorting__inverted" width="11" height="10" alt="По убыванию">
                 </a>
               </li>
               <li>
-                <a class="sorting__item" href="#">
+                <a class="sorting__item" href="#" aria-label="Сортировать по возрастанию">
                   <img src="img/arrow-up.svg" width="11" height="10" alt="По возрастанию">
                 </a>
               </li>
@@ -167,11 +167,11 @@
               <img src="img/catalog/sedona.jpg" width="360" height="576" alt="Седона">
             </div>
             <div class="product__desc">
-              <a class="product__button" href="#">9 900 РУБ.</a>
+              <a class="product__button" href="#" aria-label="Цена: 9 900 руб.">9 900 РУБ.</a>
               <p class="product__text">
                 Информационный сайт для&nbsp;туристов
               </p>
-              <h3 class="product__title"><a href="#">SEDONA</a></h3>
+              <h3 class="product__title"><a href="#" aria-label="Подробнее про сайт Седона">SEDONA</a></h3>
             </div>
           </li>
 
@@ -180,11 +180,11 @@
               <img src="img/catalog/pinkapp.jpg" width="360" height="576" alt="Pink App">
             </div>
             <div class="product__desc">
-              <a class="product__button" href="#">9 900 РУБ.</a>
+              <a class="product__button" href="#" aria-label="Цена: 9 900 руб.">9 900 РУБ.</a>
               <p class="product__text">
                 Продуктовый лендинг приложения для iOS и Android
               </p>
-              <h3 class="product__title"><a href="#">PINK APP</a></h3>
+              <h3 class="product__title"><a href="#" aria-label="Подробнее про сайт Pink App">PINK APP</a></h3>
             </div>
           </li>
 
@@ -193,11 +193,11 @@
               <img src="img/catalog/barbershop.jpg" width="360" height="576" alt="Barbershop">
             </div>
             <div class="product__desc">
-              <a class="product__button" href="#">9 900 РУБ.</a>
+              <a class="product__button" href="#" aria-label="Цена: 9 900 руб.">9 900 РУБ.</a>
               <p class="product__text">
                 Сайт салона красоты. Для&nbsp;мужчин, да.
               </p>
-              <h3 class="product__title"><a href="#">BARBERSHOP</a></h3>
+              <h3 class="product__title"><a href="#" aria-label="Подробнее про сайт Barbershop">BARBERSHOP</a></h3>
             </div>
           </li>
 
@@ -206,11 +206,11 @@
               <img src="img/catalog/mishka.jpg" width="360" height="576" alt="Mishka">
             </div>
             <div class="product__desc">
-              <a class="product__button" href="#">9 900 РУБ.</a>
+              <a class="product__button" href="#" aria-label="Цена: 9 900 руб.">9 900 РУБ.</a>
               <p class="product__text">
                 Интернет-магазин вязаных&nbsp;игрушек
               </p>
-              <h3 class="product__title"><a href="#">MISHKA</a></h3>
+              <h3 class="product__title"><a href="#" aria-label="Подробнее про сайт Mishka">MISHKA</a></h3>
             </div>
           </li>
 
@@ -219,11 +219,11 @@
               <img src="img/catalog/aplus.jpg" width="360" height="576" alt="A Plus">
             </div>
             <div class="product__desc">
-              <a class="product__button" href="#">9 900 РУБ.</a>
+              <a class="product__button" href="#" aria-label="Цена: 9 900 руб.">9 900 РУБ.</a>
               <p class="product__text">
                 Лендинг курсов повышения квалификации
               </p>
-              <h3 class="product__title"><a href="#">A PLUS</a></h3>
+              <h3 class="product__title"><a href="#" aria-label="Подробнее про сайт A Plus">A PLUS</a></h3>
             </div>
           </li>
 
@@ -232,11 +232,11 @@
               <img src="img/catalog/kvast.jpg" width="360" height="576" alt="Кваст">
             </div>
             <div class="product__desc">
-              <a class="product__button" href="#">9 900 РУБ.</a>
+              <a class="product__button" href="#" aria-label="Цена: 9 900 руб.">9 900 РУБ.</a>
               <p class="product__text">
                 Промо-сайт производителя крафтового кваса
               </p>
-              <h3 class="product__title"><a href="#">КВАСТ</a></h3>
+              <h3 class="product__title"><a href="#" aria-label="Подробнее про сайт Кваст">КВАСТ</a></h3>
             </div>
           </li>
 
@@ -244,16 +244,16 @@
 
         <ul class="page">
           <li class="page__item page__item--current">
-            <a href="#">1</a>
+            <a href="#" aria-label="Страница 1">1</a>
           </li>
           <li class="page__item">
-            <a href="#">2</a>
+            <a href="#" aria-label="Страница 2">2</a>
           </li>
           <li class="page__item">
-            <a href="#">3</a>
+            <a href="#" aria-label="Страница 3">3</a>
           </li>
           <li class="page__item">
-            <a href="#">СЛЕДУЮЩАЯ</a>
+            <a href="#" aria-label="Следующая страница">СЛЕДУЮЩАЯ</a>
           </li>
         </ul>
 
@@ -279,7 +279,7 @@
         <p class="contact__text">
           тел. +7 (812) 275-75-75
         </p>
-        <a class="contact__button" href="form.html" tabindex="0">НАПИШИТЕ НАМ</a>
+        <a class="contact__button" href="form.html" tabindex="0" aria-label="Написать нам">НАПИШИТЕ НАМ</a>
       </div>
     </div>
   </div>
@@ -291,17 +291,17 @@
 
         <ul class="social__list">
           <li>
-            <a class="social__button" href="#">
+            <a class="social__button social__button--vk" href="#" aria-label="Наш ВКонтакте">
               <img src="./img/vk-icon.svg" width="26" height="15" alt="VK">
             </a>
           </li>
           <li>
-            <a class="social__button" href="#">
+            <a class="social__button social__button--fb" href="#" aria-label="Наш Фейсбук">
               <img src="./img/fb-icon.svg" width="12" height="22" alt="Facebook">
             </a>
           </li>
           <li>
-            <a class="social__button" href="#">
+            <a class="social__button social__button--insta" href="#" aria-label="Наш Инстаграм">
               <img src="./img/insta-icon.svg" width="21" height="21" alt="Instagram">
             </a>
           </li>
@@ -322,7 +322,7 @@
   <div class="modal">
     <p class="modal__title">Напишите нам</p>
 
-    <button type="button" class="modal__close">
+    <button type="button" class="modal__close" aria-label="Закрыть окно">
       <img src="./img/close-cross.svg" width="21" height="21" alt="Закрыть">
     </button>
 
@@ -347,7 +347,7 @@
 
       </div>
 
-      <button type="submit" class="modal__button">ОТПРАВИТЬ</button>
+      <button type="submit" class="modal__button" aria-label="Отправить">ОТПРАВИТЬ</button>
 
     </form>
   </div>
