@@ -47,11 +47,11 @@ a {
 /* ХЭДЕР */
 
 .header {
-  padding-top: 49px;
-  padding-bottom: 18px;
-
   height: 65px;
   min-width: 1440px;
+
+  padding-top: 49px;
+  padding-bottom: 18px;
 
   background-color: #eeeeee;
   border: 0.1px solid transparent;
@@ -178,6 +178,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  outline: none;
   border-radius: 3px;
 
   margin-bottom: 20px;
@@ -283,6 +284,7 @@ a {
   color: #ffffff;
   font-weight: 500;
   border-radius: 3px;
+  outline: none;
 }
 
 .features__button--red {
@@ -562,6 +564,7 @@ a {
   justify-content: center;
   cursor: pointer;
   border-radius: 3px;
+  outline: none;
 }
 
 .contact__button:hover {
@@ -706,6 +709,7 @@ a {
    font-weight: 500;
    border: none;
    font-size: 16px;
+   outline: none;
 
    display: flex;
    align-items: center;
@@ -751,6 +755,7 @@ a {
   font-weight: 500;
   background-color: #e1e1e1;
   border-radius: 50%;
+  outline: none;
 }
 
 .social__button:hover {
@@ -1027,8 +1032,9 @@ a {
   height: 100%;
   width: 100%;
 
-  padding: 15px 0;
-  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .page__item:hover {
@@ -1178,15 +1184,12 @@ a {
   color: #283136;
 }
 
-input:not(:disabled) + .filter__label:hover {
+input:not(:disabled) + .filter__label:hover,
+input:not(:disabled) + .filter__label:hover.filter__label::before {
   cursor: pointer;
   color: #000000;
-  transition: 300ms ease-out;
-}
-
-input:not(:disabled) + .filter__label:hover.filter__label::before {
+  transition: opacity 300ms ease-out;
   opacity: 1;
-  transition: 300ms ease-out;
 }
 
 .filter__radio + .filter__label::before {
