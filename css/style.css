@@ -48,7 +48,7 @@ a {
 
 .header {
   height: 65px;
-  min-width: 1440px;
+  min-width: 1200px;
 
   padding-top: 49px;
   padding-bottom: 18px;
@@ -124,7 +124,7 @@ a {
   margin-bottom: 80px;
   position: relative;
 
-  min-width: 1440px;
+  min-width: 1200px;
   background-color: #eeeeee;
   border: 0.1px solid transparent;
 }
@@ -202,7 +202,7 @@ a {
   justify-content: center;
   left: 50%;
   bottom: 77px;
-  width: 18px;
+  margin-left: -44px;
   list-style: none;
   padding: 0;
 }
@@ -503,7 +503,7 @@ a {
 /* карта */
 
 .contact {
-  min-width: 1440px;
+  min-width: 1200px;
   position: relative;
 
   background: url("../img/map-marker.png") no-repeat 908px 50%,
@@ -911,8 +911,8 @@ a {
   padding: 0;
   margin: 0;
   margin-bottom: 34px;
-
   padding-top: 39px;
+
   width: 360px;
   height: 615px;
   box-sizing: border-box;
@@ -937,6 +937,11 @@ a {
 .product__img {
   padding: 0;
   margin: 0;
+
+  width: 360px;
+  height: 576px;
+
+  background-color: #eeeeee;
 }
 
 .product__desc {
