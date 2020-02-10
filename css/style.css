@@ -133,7 +133,7 @@ a {
 }
 
 .slider__slide--active {
-  height: 413px;
+  min-height: 413px;
   display: block;
 }
 
