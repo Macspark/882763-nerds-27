@@ -1262,11 +1262,7 @@ input:disabled + .filter__label {
   transition: 300ms ease-out;
 }
 
-.filter__submit:focus {
-  outline: 5px auto -webkit-focus-ring-color;
-  background-color: #dfdfdf;
-}
-
+.filter__submit:focus,
 .filter__submit:active {
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
   background-color: #d5d5d5;
