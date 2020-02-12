@@ -217,10 +217,6 @@ a {
   outline: none;
 }
 
-.slider__switcher:focus {
-  outline: 5px auto -webkit-focus-ring-color;
-}
-
 .slider__switcher--active::after {
   position: absolute;
   top: 0;
