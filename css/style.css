@@ -31,6 +31,13 @@ body {
   font-family: "Roboto", "Arial", sans-serif;
 }
 
+.visually-hidden {
+	position: absolute;
+	visibility: hidden;
+  width: 1px;
+  height: 1px;
+}
+
 .container {
   max-width: 1160px;
   min-width: 1160px;
