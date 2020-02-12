@@ -436,8 +436,6 @@ a {
   border-top: 2px solid #eeeeee;
   border-bottom: 2px solid #eeeeee;
 
-  min-height: 180px;
-
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -449,7 +447,6 @@ a {
 .partners__item {
   position: relative;
   opacity: 0.2;
-  height: 180px;
   display: flex;
   align-items: center;
   outline: none;
@@ -471,9 +468,16 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
 
   width: 260px;
+  height: 180px;
+
   margin-right: 40px;
+}
+
+.partners li:first-child {
+  padding-top: 7px;
 }
 
 .partners li:nth-child(4n) {
