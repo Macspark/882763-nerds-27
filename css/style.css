@@ -49,8 +49,7 @@ html {
 }
 
 .container {
-  max-width: 1160px;
-  min-width: 1160px;
+  width: 1160px;
   margin: 0 auto;
 }
 
@@ -62,8 +61,6 @@ a {
 /* ХЭДЕР */
 
 .header {
-  min-width: 1160px;
-
   padding-top: 49px;
   padding-bottom: 2px;
 
@@ -140,7 +137,6 @@ a {
   margin-bottom: 80px;
   position: relative;
 
-  min-width: 1160px;
   background-color: #eeeeee;
   border: 0.1px solid transparent;
 }
@@ -519,7 +515,6 @@ a {
 /* карта */
 
 .contact {
-  min-width: 1160px;
   position: relative;
 
   background: url("../img/map-marker.png") no-repeat 908px 50%,
@@ -830,7 +825,6 @@ a {
   text-align: center;
   margin-bottom: 55px;
 
-  min-width: 1160px;
   background-color: #eeeeee;
   border: 0.1px solid transparent;
 }
@@ -1106,7 +1100,7 @@ a {
 }
 
 .filter__fieldset:first-child {
-  margin-bottom: 28px;
+  margin-bottom: 30px;
 }
 
 .filter__title {
