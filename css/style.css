@@ -31,9 +31,19 @@ body {
   font-family: "Roboto", "Arial", sans-serif;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 .visually-hidden {
 	position: absolute;
-	visibility: hidden;
+  visibility: hidden;
   width: 1px;
   height: 1px;
 }
@@ -42,7 +52,6 @@ body {
   max-width: 1160px;
   min-width: 1160px;
   margin: 0 auto;
-  padding: 0 40px;
 }
 
 a {
@@ -53,11 +62,10 @@ a {
 /* ХЭДЕР */
 
 .header {
-  height: 65px;
   min-width: 1240px;
 
   padding-top: 49px;
-  padding-bottom: 18px;
+  padding-bottom: 2px;
 
   background-color: #eeeeee;
   border: 0.1px solid transparent;
@@ -73,12 +81,12 @@ a {
   padding-bottom: 12px;
 }
 
-.header__logo:hover a {
+.header__logo:hover {
   opacity: 0.8;
   transition: 300ms ease-out;
 }
 
-.header__logo:active a {
+.header__logo:active {
   opacity: 0.3;
 }
 
@@ -113,6 +121,8 @@ a {
   padding: 0;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
+  max-width: 600px;
 
   letter-spacing: 0.15px;
 }
