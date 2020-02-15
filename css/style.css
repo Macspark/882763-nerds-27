@@ -215,8 +215,12 @@ a {
   padding: 0;
 }
 
+.slider__controls li {
+  margin: 0 17px 0 0;
+  padding: 0;
+}
+
 .slider__switcher {
-  margin-right: 17px;
   position: relative;
   width: 18px;
   height: 18px;
