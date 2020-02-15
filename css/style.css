@@ -201,11 +201,15 @@ a {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.slider .container {
+  position: relative;
+}
+
 .slider__controls {
   position: absolute;
   display: flex;
   justify-content: center;
-  left: 748px;
+  left: 535px;
   bottom: 77px;
   list-style: none;
   padding: 0;
