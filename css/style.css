@@ -75,12 +75,12 @@ a {
   padding-bottom: 12px;
 }
 
-.header__logo:hover {
+.header__logo[href]:hover {
   opacity: 0.8;
   transition: 300ms ease-out;
 }
 
-.header__logo:active {
+.header__logo[href]:active {
   opacity: 0.3;
 }
 
