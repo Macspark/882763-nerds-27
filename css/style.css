@@ -73,11 +73,11 @@ a {
 
 .header__logo {
   padding-bottom: 12px;
+  transition: 300ms ease-out;
 }
 
 .header__logo[href]:hover {
   opacity: 0.8;
-  transition: 300ms ease-out;
 }
 
 .header__logo[href]:active {
@@ -88,12 +88,12 @@ a {
   position: relative;
   font-weight: 500;
   outline: none;
+  transition: 300ms ease-out;
 }
 
 .header__item:hover,
 .header__item:focus {
   color: #fb565a;
-  transition: 300ms ease-out;
 }
 
 .header__item:active {
@@ -187,11 +187,11 @@ a {
   justify-content: center;
   outline: none;
   border-radius: 3px;
+  transition: 300ms ease-out;
 }
 
 .slider__button:hover {
   background-color: #e74246;
-  transition: 300ms ease-out;
 }
 
 .slider__button:active,
@@ -293,6 +293,7 @@ a {
   font-weight: 500;
   border-radius: 3px;
   outline: none;
+  transition: 300ms ease-out;
 }
 
 .features__button--red {
@@ -301,7 +302,6 @@ a {
 
 .features__button--red:hover {
   background-color: #e74246;
-  transition: 300ms ease-out;
 }
 
 .features__button--red:active,
@@ -317,7 +317,6 @@ a {
 
 .features__button--green:hover {
   background-color: #00bc6c;
-  transition: 300ms ease-out;
 }
 
 .features__button--green:active,
@@ -333,7 +332,6 @@ a {
 
 .features__button--yellow:hover {
   background-color: #eab534;
-  transition: 300ms ease-out;
 }
 
 .features__button--yellow:active,
@@ -459,12 +457,12 @@ a {
   display: flex;
   align-items: center;
   outline: none;
+  transition: 300ms ease-out;
 }
 
 .partners__item:hover,
 .partners__item:focus {
   opacity: 1;
-  transition: 300ms ease-out;
 }
 
 .partners__item:active {
@@ -570,11 +568,11 @@ a {
   cursor: pointer;
   border-radius: 3px;
   outline: none;
+  transition: 300ms ease-out;
 }
 
 .contact__button:hover {
   background-color: #e74246;
-  transition: 300ms ease-out;
 }
 
 .contact__button:active,
@@ -631,12 +629,13 @@ a {
   background-color: transparent;
   border: none;
   outline: none;
+
+  transition: 300ms ease-out;
 }
 
 .modal__close:hover {
   cursor: pointer;
   opacity: 1;
-  transition: 300ms ease-out;
 }
 
 .modal__close:focus {
@@ -696,11 +695,11 @@ a {
 .modal__input {
   border: 2px solid #d7dcde;
   color: #000000;
+  transition: 300ms ease-out;
 }
 
 .modal__field .modal__input:hover {
   border: 2px solid #b4b9bb;
-  transition: 300ms ease-out;
 }
 
 .modal__field .modal__input:focus {
@@ -733,11 +732,12 @@ a {
 
    cursor: pointer;
    border-radius: 3px;
+
+   transition: 300ms ease-out;
 }
 
 .modal__button:hover {
   background-color: #e74246;
-  transition: 300ms ease-out;
 }
 
 .modal__button:active,
@@ -772,10 +772,11 @@ a {
   background-color: #e1e1e1;
   border-radius: 50%;
   outline: none;
+
+  transition: 300ms ease-out;
 }
 
 .social__button:hover {
-  transition: 300ms ease-out;
   background-color: #e74246;
 }
 
@@ -938,11 +939,13 @@ a {
   z-index: 1;
   background-image: url("../img/catalog-item-header.svg");
   opacity: 0.12;
+
+  transition: 300ms ease-out;
 }
 
 .product__item:hover::before {
   opacity: 1;
-  transition: 300ms ease-out;
+
 }
 
 .product__img {
@@ -979,11 +982,11 @@ a {
   font-size: 18px;
   line-height: 1.67;
   margin: 17px 0 15px;
+  transition: 300ms ease-out;
 }
 
 .product__title:hover a {
   color: #fb565a;
-  transition: 300ms ease-out;
 }
 
 .product__title:active a {
@@ -1010,11 +1013,12 @@ a {
   justify-content: center;
   color: #ffffff;
   font-weight: 500;
+
+  transition: 300ms ease-out;
 }
 
 .product__button:hover {
   background-color: #e74246;
-  transition: 300ms ease-out;
 }
 
 .product__button:active {
@@ -1041,6 +1045,8 @@ a {
   border: 3px solid #eeeeee;
   background-color: #eeeeee;
   border-radius: 3px;
+
+  transition: 300ms ease-out;
 }
 
 .page__item a {
@@ -1056,7 +1062,6 @@ a {
 .page__item:hover {
   background-color: #dfdfdf;
   border-color: #dfdfdf;
-  transition: 300ms ease-out;
 }
 
 .page__item:active {
@@ -1200,11 +1205,14 @@ a {
   color: #283136;
 }
 
+.filter__label {
+  transition: opacity 300ms ease-out;
+}
+
 input:not(:disabled) + .filter__label:hover,
 input:not(:disabled) + .filter__label:hover.filter__label::before {
   cursor: pointer;
   color: #000000;
-  transition: opacity 300ms ease-out;
   opacity: 1;
 }
 
