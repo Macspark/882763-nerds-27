@@ -218,6 +218,8 @@ a {
 .slider__controls li {
   margin: 0 17px 0 0;
   padding: 0;
+
+  font-size: 0;
 }
 
 .slider__switcher {
