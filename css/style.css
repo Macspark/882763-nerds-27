@@ -205,9 +205,8 @@ a {
   position: absolute;
   display: flex;
   justify-content: center;
-  left: 50%;
+  left: 748px;
   bottom: 77px;
-  margin-left: -44px;
   list-style: none;
   padding: 0;
 }
