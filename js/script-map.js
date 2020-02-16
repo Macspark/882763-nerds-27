@@ -11,5 +11,13 @@ ymaps.ready(function () {
       }
   });
 
+  var mapPlacemark = new ymaps.Placemark([59.938631, 30.322055], {}, {
+    iconLayout: 'default#image',
+    iconImageHref: 'img/map-marker.png',
+    iconImageSize: [231, 190],
+    iconImageOffset: [45, -188]
+});
+
   map.geoObjects.add(mapMark);
+  map.geoObjects.add(mapPlacemark);
 });
