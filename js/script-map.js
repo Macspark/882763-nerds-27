@@ -4,13 +4,6 @@ ymaps.ready(function () {
       zoom: 17
   });
 
-  var mapMark = new ymaps.GeoObject({
-      geometry: {
-          type: "Point",
-          coordinates: [59.938631, 30.323055]
-      }
-  });
-
   var mapPlacemark = new ymaps.Placemark([59.938631, 30.322055], {}, {
     iconLayout: 'default#image',
     iconImageHref: 'img/map-marker.png',
@@ -18,6 +11,5 @@ ymaps.ready(function () {
     iconImageOffset: [45, -188]
 });
 
-  map.geoObjects.add(mapMark);
   map.geoObjects.add(mapPlacemark);
 });
