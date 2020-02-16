@@ -1205,15 +1205,12 @@ a {
   color: #283136;
 }
 
-.filter__label {
-  transition: opacity 300ms ease-out;
-}
-
 input:not(:disabled) + .filter__label:hover,
 input:not(:disabled) + .filter__label:hover.filter__label::before {
   cursor: pointer;
   color: #000000;
   opacity: 1;
+  transition: opacity 300ms ease-out;
 }
 
 .filter__radio + .filter__label::before {
