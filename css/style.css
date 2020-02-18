@@ -138,6 +138,7 @@ a {
 
 .slider {
   position: relative;
+
   margin-bottom: 80px;
 
   background-color: #eeeeee;
@@ -223,6 +224,7 @@ a {
   position: absolute;
   left: 536px;
   bottom: 80px;
+
   padding: 0;
 
   display: flex;
@@ -525,6 +527,7 @@ a {
 
 .partners li {
   position: relative;
+
   margin-right: 40px;
 
   display: flex;
@@ -991,6 +994,7 @@ a {
 
 .product__item {
   position: relative;
+
   padding: 39px 0 0 0;
   margin: 0 0 34px 0;
 
