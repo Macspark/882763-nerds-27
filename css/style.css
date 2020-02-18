@@ -612,9 +612,17 @@ a {
   color: #666666;
 }
 
-.contact__button {
-  margin-top: 37px;
+.contact__tel {
+  margin: 0 0 37px;
 
+  display: block;
+  max-width: 210px;
+
+  line-height: 1.13;
+  color: #666666;
+}
+
+.contact__button {
   display: flex;
   align-items: center;
   justify-content: center;
