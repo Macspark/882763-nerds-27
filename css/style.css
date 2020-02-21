@@ -678,10 +678,10 @@ a {
 
   background-color: #ffffff;
 
-  animation: fromside 300ms;
+  animation: appear 300ms;
 }
 
-@keyframes fromside {
+@keyframes appear {
   from {
     opacity: 0.3;
     transform: translateY(-150px);

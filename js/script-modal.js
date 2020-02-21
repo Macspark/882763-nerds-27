@@ -14,6 +14,7 @@ modalCloseBtn.addEventListener('click', function() {
 
 document.addEventListener('keydown', function(event) {
   if (event.key == 'Escape' && modalWindow.classList.contains(modalActive)) {
+  event.preventDefault()
   modalWindow.classList.remove(modalActive);
   }
 });
