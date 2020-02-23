@@ -572,6 +572,8 @@ a {
 .contact {
   position: relative;
 
+  margin-bottom: 55px;
+
   background: url("../img/map-marker.png") no-repeat 908px 50%,
               url("../img/map.jpg");
   background-size: 231px 190px, cover;
@@ -828,7 +830,6 @@ a {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  min-height: 217px;
 }
 
 .social__list {
