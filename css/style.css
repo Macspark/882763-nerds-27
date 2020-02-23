@@ -428,7 +428,9 @@ a {
 }
 
 .company__possibilities li::before {
-  margin-right: 10px;
+  position: absolute;
+  top: 11px;
+  left: 0;
 
   content: "";
   width: 25px;
@@ -438,10 +440,10 @@ a {
 }
 
 .company__possibilities li {
-  margin: 0 0 24px;
+  position: relative;
 
-  display: flex;
-  align-items: center;
+  margin: 0 0 24px;
+  padding-left: 35px;
 
   color: #283136;
   line-height: 1.5;
