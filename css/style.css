@@ -1332,7 +1332,7 @@ input:not(:disabled) + .filter__label:hover.filter__label::before {
 }
 
 .filter__radio:checked + .filter__label::before {
-  background-image: url("../img/radio-on.svg") no-repeat;
+  background-image: url("../img/radio-on.svg");
 }
 
 .filter__checkbox + .filter__label::before {
@@ -1343,6 +1343,7 @@ input:not(:disabled) + .filter__label:hover.filter__label::before {
   height: 23px;
 
   background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
 
   opacity: 0.4;
 }
