@@ -592,12 +592,12 @@ a {
 
 .contact .container {
   display: flex;
-  align-items: center;
   min-height: 416px;
 }
 
 .contact__address {
   padding: 47px 50px;
+  margin: auto 0;
 
   width: 319px;
 
