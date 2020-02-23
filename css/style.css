@@ -793,24 +793,24 @@ a {
 }
 
 .modal__button {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   width: 260px;
-   height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 260px;
+  height: 50px;
 
-   font-weight: 500;
-   font-size: 16px;
+  font-weight: 500;
+  font-size: 16px;
 
-   background-color: #fb565a;
-   color: #ffffff;
+  background-color: #fb565a;
+  color: #ffffff;
 
-   outline: none;
-   border: none;
-   border-radius: 3px;
+  outline: none;
+  border: none;
+  border-radius: 3px;
 
-   cursor: pointer;
-   transition: 300ms ease-out;
+  cursor: pointer;
+  transition: 300ms ease-out;
 }
 
 .modal__button:hover {
@@ -1033,7 +1033,6 @@ a {
 
 .product__item:hover::before {
   opacity: 1;
-
 }
 
 .product__img {
