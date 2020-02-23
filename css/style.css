@@ -1189,7 +1189,7 @@ a {
 
 .filter__fieldset {
   padding: 0 0 0 1px;
-  margin: 0 0 23px;
+  margin: 0 0 30px;
 
   border: none;
 }
@@ -1224,12 +1224,18 @@ a {
 }
 
 .filter__label {
+  position: relative;
+
+  padding-left: 35px;
+
+  display: flex;
+  align-items: center;
+  height: 23px;
+
   font-size: 16px;
   font-weight: normal;
   line-height: 1.25;
   color: #283136;
-  display: flex;
-  align-items: center;
 }
 
 .filter__slider {
@@ -1322,36 +1328,39 @@ input:not(:disabled) + .filter__label:hover.filter__label::before {
 }
 
 .filter__radio + .filter__label::before {
-  margin-right: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
 
   content: "";
   width: 25px;
   height: 25px;
 
-  background-image: url("../img/radio-off.svg");
+  background: url("../img/radio-off.svg") no-repeat;
 
   opacity: 0.4;
 }
 
 .filter__radio:checked + .filter__label::before {
-  background-image: url("../img/radio-on.svg");
+  background: url("../img/radio-on.svg") no-repeat;
 }
 
 .filter__checkbox + .filter__label::before {
-  margin-right: 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
 
   content: "";
   width: 27px;
   height: 23px;
 
-  background-image: url("../img/checkbox-off.svg");
-  background-repeat: no-repeat;
+  background: url("../img/checkbox-off.svg") no-repeat;
 
   opacity: 0.4;
 }
 
 .filter__checkbox:checked + .filter__label::before {
-  background-image: url("../img/checkbox-on.svg");
+  background: url("../img/checkbox-on.svg") no-repeat;
 }
 
 input:disabled + .filter__label {
@@ -1359,7 +1368,7 @@ input:disabled + .filter__label {
 }
 
 .filter__submit {
-  margin: 34px 0 0;
+  margin: 31px 0 0;
 
   display: flex;
   align-items: center;
