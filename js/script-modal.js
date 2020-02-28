@@ -4,7 +4,7 @@ const modalCloseBtn = document.querySelector('.modal__close');
 const modalActive = 'modal--active';
 
 modalOpenBtn.addEventListener('click', function(event) {
-  event.preventDefault()
+  event.preventDefault();
   modalWindow.classList.add(modalActive);
 });
 
@@ -14,7 +14,7 @@ modalCloseBtn.addEventListener('click', function() {
 
 document.addEventListener('keydown', function(event) {
   if (event.key == 'Escape' && modalWindow.classList.contains(modalActive)) {
-  event.preventDefault()
+  event.preventDefault();
   modalWindow.classList.remove(modalActive);
   }
 });
